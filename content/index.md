@@ -20,7 +20,8 @@ Please note that some of the materials are hosted in other repositories. Make su
 :delim: ;
 :widths: auto
 
-45 min ; [Version Control](https://coderefinery.github.io/research-software-engineering/version-control/) ;
+
+45 min ; Introduction to Version Control(https://coderefinery.github.io/research-software-engineering/version-control/) ;
 50 + 50min  ; [Collaborative version control](https://coderefinery.github.io/git-collaborative/same-repository/) ;
 45 min ; **[Reproducibility and code](https://coderefinery.github.io/reproducible-research)**: ; 
 ;5 min; Reproducible research intro
@@ -66,5 +67,11 @@ In this course, you will get a quick overview of tools and best practices for re
 ## See also
 
 [All lessons of a full CodeRefinery workshop](https://coderefinery.org/lessons/#lessons-that-we-teach-in-our-tools-workshops)
+
+You can also find recordings of the full lessons on Youtube:
+- Version Control: [Intro pt 1](https://www.youtube.com/watch?v=0u2K7KJBL-U&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=2) , [intro pt 2](https://www.youtube.com/watch?v=8uay_XoNRck&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=4), [collaborative version control](https://www.youtube.com/watch?v=4Uf7eVSCZeU&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=6)
+- [Reproducible research](https://www.youtube.com/watch?v=dWemSikTR3A&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=7)
+- [Social coding](https://www.youtube.com/watch?v=qUc7PN0NNvk&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=8)
+[Full playlist on youtube](https://www.youtube.com/playlist?list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H>), inlcuding also Documentation, Jupyter, modular code develeopment and automated testing.
 
 ## Credits
