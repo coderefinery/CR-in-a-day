@@ -21,7 +21,7 @@ Please note that some of the materials are hosted in other repositories. Make su
 :widths: auto
 
 
-9:15-10:00 ; Introduction to Version Control [motivation](https://coderefinery.github.io/git-intro/motivation) and [sharing](https://coderefinery.github.io/git-intro/sharing/) 
+9:15-10:00 ; Introduction to Version Control [motivation](https://coderefinery.github.io/git-intro/motivation/) and [sharing](https://coderefinery.github.io/git-intro/sharing/) 
 10:00-10:10 ; Break 
 10:10-11:00 ; [Collaborative version control](https://coderefinery.github.io/git-collaborative/same-repository/) 
 11:00-12:00 ; Lunchbreak
@@ -46,6 +46,16 @@ Please note that some of the materials are hosted in other repositories. Make su
 :maxdepth: 1
 
 getting-ready.md
+Motivation for version control <https://coderefinery.github.io/git-intro/motivation/>
+Sharing your work <https://coderefinery.github.io/git-intro/sharing/>
+Collaborative git <https://coderefinery.github.io/git-collaborative/same-repository/>
+Reproducible research intro <https://coderefinery.github.io/reproducible-research/intro/>
+Reproducible research motivation <https://coderefinery.github.io/reproducible-research/motivation/>
+Project organization <https://coderefinery.github.io/reproducible-research/organizing-projects/>
+Social coding <https://coderefinery.github.io/social-coding/>
+Software licensing with cake <https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/#1>
+Software licensing <https://coderefinery.github.io/social-coding/software-licensing/>
+Software citation <https://coderefinery.github.io/social-coding/software-citation/>
 wrapup.md
 ```
 
