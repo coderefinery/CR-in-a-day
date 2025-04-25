@@ -7,9 +7,8 @@ This course is a condensed version of the [CodeRefinery workshop](https://codere
 
 
 :::{prereq}
-prerequisites
 
-To follow the course day, you will need a GitHub account: [Instructions](./getting-ready.md)
+To follow the course, you will need a GitHub account: [Instructions](./getting-ready.md)
 
 :::
 
@@ -17,19 +16,19 @@ To follow the course day, you will need a GitHub account: [Instructions](./getti
 :delim: ;
 :widths: auto
 
-45 min ; ; [Version Control](https://coderefinery.github.io/research-software-engineering/version-control/)
-50 + 50min  ; ; [Collaborative version control](https://coderefinery.github.io/git-collaborative/same-repository/)
-45 min ; ; Reproducibility and code: 
+45 min ; [Version Control](https://coderefinery.github.io/research-software-engineering/version-control/) ;
+50 + 50min  ; [Collaborative version control](https://coderefinery.github.io/git-collaborative/same-repository/) ;
+45 min ; **Reproducibility and code**: ; 
 ;5 min; [Reproducible research intro](https://coderefinery.github.io/reproducible-research/intro/)
 ;10 min; [Reproducible research motivation](https://coderefinery.github.io/reproducible-research/motivation/)
 ;15 min; [Organizing projects](https://coderefinery.github.io/reproducible-research/organizing-projects/)
-;15 min; Environments and containers
-35 min; ; Social coding:
+;15 min; [Environments](https://coderefinery.github.io/reproducible-research/dependencies/) and [containers](https://coderefinery.github.io/reproducible-research/environments/)
+35 min; **Social coding**: ;
 ;10 min;  [Social coding](https://coderefinery.github.io/social-coding/)
 ;10 min;  [Software licensing with cake](https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/#1)
 ;5 min;  [Software licensing](https://coderefinery.github.io/social-coding/software-licensing/)
 ;10 min;  [Software citation](https://coderefinery.github.io/social-coding/software-citation/)
-15 min; ; [Wrapup](./wrapup.md)
+15 min; [Wrapup](./wrapup.md) ;
 ```
 
 ```{toctree}
@@ -52,13 +51,13 @@ guide
 
 ## Who is the course for?
 
-This course is for you, if you are in a position where you might encounter researchers struggling with programming and its reproducibility. 
+This course is for you, if you are in a position where you might want to support researchers with programming and its reproducibility. 
 
 This course is not designed for "professional software engineers" or to make you one.
 
 ## About the course
 
-In this course, you will get a quick overview of tools and best practices for scientific software development. This course will not teach a programming language, but we aim to show you some tools and techniques to be able to guide researchers to do programming well and avoid common inefficiency traps. The tools we teach are practically a requirement for any researcher who needs to write code. The main focus is on using Git for efficiently writing and maintaining research software or other content.
+In this course, you will get a quick overview of tools and best practices for research software development. This course will not teach a programming language, but we aim to show you some tools and techniques to be able to guide researchers to do programming well and avoid common inefficiency traps. The tools we teach are practically a requirement for any researcher who needs to write code. The main focus is on using Git for efficiently writing and maintaining research software or other content.
 
 ## See also
 

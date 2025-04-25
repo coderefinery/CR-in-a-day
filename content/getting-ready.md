@@ -1,4 +1,6 @@
-# GitHub account
+# Getting ready for this course 
+
+## GitHub account
 
 In this course, we use the public GitHub service and you need an
 account at <https://github.com> and a [supported web
@@ -14,7 +16,7 @@ We are trying to make it possible to follow this course also with other Git
 hosting services but this is work in progress.
 
 
-## Create a GitHub account
+### Create a GitHub account
 
 1. Go to <https://github.com>.
 2. Click on the "Sign up" at the right-top corner.
@@ -28,6 +30,6 @@ are prompted to enable MFA before the end of CodeRefinery, follow
 GitHub's instructions since they are usually pretty good.
 
 
-## How to verify that this worked
+### How to verify that this worked
 
 If you can log in to <https://github.com>, you should be good to go.
