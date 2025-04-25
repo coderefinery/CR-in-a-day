@@ -21,24 +21,24 @@ Please note that some of the materials are hosted in other repositories. Make su
 :widths: auto
 
 
-9:15-10:00 ; Introduction to Version Control [motivation](https://coderefinery.github.io/git-intro/motivation) and [sharing](https://coderefinery.github.io/git-intro/sharing/) ;
-10:00-10:10 ; Break ;
-10:10-11:00 ; [Collaborative version control](https://coderefinery.github.io/git-collaborative/same-repository/) ;
-11:00-12:00 ; Lunchbreak;
-12:00-12:50 ; Continued, forking exercise;
-12:50-13:00; Break;
-13:00-14:00: ; **[Reproducibility and code](https://coderefinery.github.io/reproducible-research)**: ; 
-;5 min; Reproducible research intro
-;10 min; Reproducible research motivation
-;15 min; Organizing projects
-;15 min; Environments and containers
-14:00-14:10 ; Break;
-14:10-14:45; **Social coding**: ;
-;10 min;  [Social coding](https://coderefinery.github.io/social-coding/)
-;10 min;  [Software licensing with cake](https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/#1)
-;5 min;  [Software licensing](https://coderefinery.github.io/social-coding/software-licensing/)
-;10 min;  [Software citation](https://coderefinery.github.io/social-coding/software-citation/)
-14:45-15:00; [Wrapup](./wrapup.md) ;
+9:15-10:00 ; Introduction to Version Control [motivation](https://coderefinery.github.io/git-intro/motivation) and [sharing](https://coderefinery.github.io/git-intro/sharing/) 
+10:00-10:10 ; Break 
+10:10-11:00 ; [Collaborative version control](https://coderefinery.github.io/git-collaborative/same-repository/) 
+11:00-12:00 ; Lunchbreak
+12:00-12:50 ; Continued, forking exercise
+12:50-13:00; Break
+13:00-14:00 ; **[Reproducibility and code](https://coderefinery.github.io/reproducible-research)**: 
+5 min; Reproducible research intro
+10 min; Reproducible research motivation
+15 min; Organizing projects
+15 min; Environments and containers
+14:00-14:10 ; Break
+14:10-14:45; **Social coding**: 
+10 min;  [Social coding](https://coderefinery.github.io/social-coding/)
+10 min;  [Software licensing with cake](https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/#1)
+5 min;  [Software licensing](https://coderefinery.github.io/social-coding/software-licensing/)
+10 min;  [Software citation](https://coderefinery.github.io/social-coding/software-citation/)
+14:45-15:00; [Wrapup](./wrapup.md) 
 ```
 
 ```{toctree}
@@ -77,6 +77,7 @@ You can also find recordings of the full lessons on Youtube:
 - Version Control: [Intro pt 1](https://www.youtube.com/watch?v=0u2K7KJBL-U&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=2) , [intro pt 2](https://www.youtube.com/watch?v=8uay_XoNRck&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=4), [collaborative version control](https://www.youtube.com/watch?v=4Uf7eVSCZeU&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=6)
 - [Reproducible research](https://www.youtube.com/watch?v=dWemSikTR3A&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=7)
 - [Social coding](https://www.youtube.com/watch?v=qUc7PN0NNvk&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=8)
+
 [Full playlist on youtube](https://www.youtube.com/playlist?list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H>), inlcuding also Documentation, Jupyter, modular code develeopment and automated testing.
 
 ## Credits
