@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = "LESSON NAME"
-copyright = "2020, The contributors"
-author = "The contributors"
+project = "CodeRefinery in a day"
+copyright = "2025, CodeRefinery contributors"
+author = "CodeRefinery contributors"
 github_user = "coderefinery"
 github_repo_name = ""  # auto-detected from dirname if blank
 github_version = "main"

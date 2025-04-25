@@ -1,5 +1,7 @@
 # Instructor's guide
 
+To be filled soon.
+
 ## Why we teach this lesson
 
 ## Intended learning outcomes
