@@ -12,17 +12,21 @@ To follow the course, you will need a GitHub account: [Instructions](./getting-r
 
 :::
 
+## Schedule
+
+Please note that some of the materials are hosted in other repositories. Make sure to always come back here to find the next link.
+
 ```{csv-table}
 :delim: ;
 :widths: auto
 
 45 min ; [Version Control](https://coderefinery.github.io/research-software-engineering/version-control/) ;
 50 + 50min  ; [Collaborative version control](https://coderefinery.github.io/git-collaborative/same-repository/) ;
-45 min ; **Reproducibility and code**: ; 
-;5 min; [Reproducible research intro](https://coderefinery.github.io/reproducible-research/intro/)
-;10 min; [Reproducible research motivation](https://coderefinery.github.io/reproducible-research/motivation/)
-;15 min; [Organizing projects](https://coderefinery.github.io/reproducible-research/organizing-projects/)
-;15 min; [Environments](https://coderefinery.github.io/reproducible-research/dependencies/) and [containers](https://coderefinery.github.io/reproducible-research/environments/)
+45 min ; **[Reproducibility and code](https://coderefinery.github.io/reproducible-research)**: ; 
+;5 min; Reproducible research intro
+;10 min; Reproducible research motivation
+;15 min; Organizing projects
+;15 min; Environments and containers
 35 min; **Social coding**: ;
 ;10 min;  [Social coding](https://coderefinery.github.io/social-coding/)
 ;10 min;  [Software licensing with cake](https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/#1)
