@@ -1,0 +1,560 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeRefinery in a day documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css" />
+      <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+      <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx_lesson.css" />
+      <link rel="stylesheet" type="text/css" href="_static/term_role_formatting.css" />
+      <link rel="stylesheet" type="text/css" href="_static/sphinx_rtd_theme_ext_color_contrast.css" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js"></script>
+      <script src="_static/doctools.js"></script>
+      <script src="_static/sphinx_highlight.js"></script>
+      <script src="_static/clipboard.min.js"></script>
+      <script src="_static/copybutton.js"></script>
+      <script src="_static/minipres.js"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="_static/togglebutton.js"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            CodeRefinery in a day
+          </a>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">The lesson</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-getting-ready">Getting ready for this course</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.github.io/git-intro/motivation/">Motivation for version control</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.github.io/git-intro/sharing/">Sharing your work</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-collaborativegit">Using git to collaborate</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.github.io/reproducible-research/intro/">Reproducible research intro</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.github.io/reproducible-research/motivation/">Reproducible research motivation</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.github.io/reproducible-research/organizing-projects/">Project organization</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.github.io/social-coding/">Social coding</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/#1">Software licensing with cake</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.github.io/social-coding/software-licensing/">Software licensing</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.github.io/social-coding/software-citation/">Software citation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-wrapup">Wrap up and where to go from here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-quick-reference">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-guide">Instructor’s guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">CodeRefinery in a day</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">CodeRefinery in a day  documentation</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/CR-in-a-day/blob/main/content/index" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="coderefinery-in-a-day">
+<h1>CodeRefinery in a day<a class="headerlink" href="#coderefinery-in-a-day" title="Link to this heading"></a></h1>
+<p>This course provides an introduction to essential practices in research software engineering, with a strong focus on collaboration, reproducibility, and sustainability. Participants will learn the fundamentals of version control and how to effectively collaborate on texts in GitHub. The course also explores key concepts in reproducible research, including organizing projects, a brief overview of environments and containers. In addition, it covers the social aspects of coding, such as software licensing, citation, and open collaboration. By the end, learners will know about best practices for developing and sharing research software more efficiently and transparently.</p>
+<p>This course is a condensed version of the <a class="reference external" href="https://coderefinery.org/lessons/#lessons-that-we-teach-in-our-tools-workshops">CodeRefinery workshop</a></p>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-0">
+<p class="admonition-title">Prerequisites</p>
+<p>To follow the course, you will need a GitHub account: <a class="reference internal" href="#document-getting-ready"><span class="std std-doc">Instructions</span></a></p>
+</div>
+<section id="why-is-this-important">
+<h2>Why is this important?<a class="headerlink" href="#why-is-this-important" title="Link to this heading"></a></h2>
+<p>When in doubt if what you are doing is important in research, always reflect using the Allea European Code of Conduct for Research Integrity (2023)</p>
+<p>The four Allea principles are:</p>
+<ul class="simple">
+<li><p><strong>Reliability</strong> in ensuring the quality of research, reflected in the design, methodology, analysis, and use of resources.</p></li>
+<li><p><strong>Honesty</strong> in developing, undertaking, reviewing, reporting, and communicating research in a <em><strong>transparent</strong></em>, fair, full, and unbiased way.</p></li>
+<li><p><strong>Respect</strong> for colleagues, research participants, research subjects, society, ecosystems, cultural heritage, and the environment.</p></li>
+<li><p><strong>Accountability</strong> for the research <em><strong>from idea to publication</strong></em>, for its management and organisation, for training, supervision, and mentoring, and for its wider societal impacts.</p></li>
+</ul>
+<p>Transparency and accountability from idea to publication are fundamental requirements of reproducible research. What we will cover in this course are all the necessary steps needed so that the <em>computational/methodological/digital</em> part of the research work is done transparently and allows others to verify and reproduce it.</p>
+<p><strong>However</strong>, we are not <em>just</em> doing this to follow research integrity principles, we are also doing this to improve how we work with other collaborators, and especially <strong>we do this to help our future self</strong> so that it can always be possible to travel back in time and see what was done at a certain part of the research process.</p>
+<p><img alt="Final.doc from PhDComics" src="http://www.phdcomics.com/comics/archive/phd101212s.gif" /></p>
+<p>(<a class="reference external" href="https://phdcomics.com/comics/archive.php?comicid=1531">Source</a>)</p>
+</section>
+<section id="schedule">
+<h2>Schedule<a class="headerlink" href="#schedule" title="Link to this heading"></a></h2>
+<p>Please note that some of the materials are hosted in other repositories. Make sure to always come back here to find the next link.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>9:15-10:00</p></td>
+<td><p>Introduction to Version Control <a class="reference external" href="https://coderefinery.github.io/git-intro/motivation/">motivation</a> and <a class="reference external" href="https://coderefinery.github.io/git-intro/sharing/">sharing</a></p></td>
+</tr>
+<tr class="row-even"><td><p>10:00-10:10</p></td>
+<td><p>Break</p></td>
+</tr>
+<tr class="row-odd"><td><p>10:10-11:00</p></td>
+<td><p><a class="reference internal" href="#document-collaborativegit"><span class="std std-doc">Collaborating with git</span></a></p></td>
+</tr>
+<tr class="row-even"><td><p>11:00-12:00</p></td>
+<td><p><em>Lunchbreak</em></p></td>
+</tr>
+<tr class="row-odd"><td><p>12:00-12:50</p></td>
+<td><p>Collaborating with git exercise</p></td>
+</tr>
+<tr class="row-even"><td><p>12:50-13:00</p></td>
+<td><p>Break</p></td>
+</tr>
+<tr class="row-odd"><td><p>13:00-14:00</p></td>
+<td><p><strong><a class="reference external" href="https://coderefinery.github.io/reproducible-research">Reproducibility and code</a></strong>:</p></td>
+</tr>
+<tr class="row-even"><td><p>5 min</p></td>
+<td><p>Reproducible research intro</p></td>
+</tr>
+<tr class="row-odd"><td><p>10 min</p></td>
+<td><p>Reproducible research motivation</p></td>
+</tr>
+<tr class="row-even"><td><p>15 min</p></td>
+<td><p>Organizing projects</p></td>
+</tr>
+<tr class="row-odd"><td><p>15 min</p></td>
+<td><p>Environments and containers</p></td>
+</tr>
+<tr class="row-even"><td><p>14:00-14:10</p></td>
+<td><p>Break</p></td>
+</tr>
+<tr class="row-odd"><td><p>14:10-14:45</p></td>
+<td><p><strong>Social coding</strong>:</p></td>
+</tr>
+<tr class="row-even"><td><p>10 min</p></td>
+<td><p><a class="reference external" href="https://coderefinery.github.io/social-coding/">Social coding</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>10 min</p></td>
+<td><p><a class="reference external" href="https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/#1">Software licensing with cake</a></p></td>
+</tr>
+<tr class="row-even"><td><p>5 min</p></td>
+<td><p><a class="reference external" href="https://coderefinery.github.io/social-coding/software-licensing/">Software licensing</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>10 min</p></td>
+<td><p><a class="reference external" href="https://coderefinery.github.io/social-coding/software-citation/">Software citation</a></p></td>
+</tr>
+<tr class="row-even"><td><p>14:45-15:00</p></td>
+<td><p><a class="reference internal" href="#document-wrapup"><span class="std std-doc">Wrapup</span></a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="toctree-wrapper compound">
+<span id="document-getting-ready"></span><section id="getting-ready-for-this-course">
+<h3>Getting ready for this course<a class="headerlink" href="#getting-ready-for-this-course" title="Link to this heading"></a></h3>
+<section id="github-account">
+<h4>GitHub account<a class="headerlink" href="#github-account" title="Link to this heading"></a></h4>
+<p>In this course, we use the public GitHub service and you need an
+account at <a class="reference external" href="https://github.com">https://github.com</a> and a <a class="reference external" href="https://help.github.com/articles/supported-browsers/">supported web
+browser</a>. Basic GitHub
+accounts are free.</p>
+<p>If you are concerned about the personal information to reveal to GitHub, for
+example how to keep your email address private, please review <a class="reference external" href="https://help.github.com/articles/keeping-your-email-address-private/">these
+instructions</a>
+for keeping your email address private provided at GitHub.</p>
+<p>We are trying to make it possible to follow this course also with other Git
+hosting services but this is work in progress.</p>
+<section id="create-a-github-account">
+<h5>Create a GitHub account<a class="headerlink" href="#create-a-github-account" title="Link to this heading"></a></h5>
+<ol class="arabic simple">
+<li><p>Go to <a class="reference external" href="https://github.com">https://github.com</a>.</p></li>
+<li><p>Click on the “Sign up” at the right-top corner.</p></li>
+<li><p>Enter your username of your choice (if it is already used, you will get some suggestions), email address, and password.</p></li>
+<li><p>Follow further instruction and verify your account.</p></li>
+</ol>
+<p>GitHub may require you to enable multi-factor authentication
+(MFA). This is generally a good thing, but may take some time to set
+up. Luckily, you probably don’t have to do this immediately. If you
+are prompted to enable MFA before the end of CodeRefinery, follow
+GitHub’s instructions since they are usually pretty good.</p>
+</section>
+<section id="how-to-verify-that-this-worked">
+<h5>How to verify that this worked<a class="headerlink" href="#how-to-verify-that-this-worked" title="Link to this heading"></a></h5>
+<p>If you can log in to <a class="reference external" href="https://github.com">https://github.com</a>, you should be good to go.</p>
+</section>
+</section>
+</section>
+<span id="document-collaborativegit"></span><section id="using-git-to-collaborate">
+<h3>Using git to collaborate<a class="headerlink" href="#using-git-to-collaborate" title="Link to this heading"></a></h3>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<ul class="simple">
+<li><p>Understanding the distributed nature of git collaborations</p></li>
+<li><p>Learning about the key terms</p></li>
+<li><p>Being able to suggest changes to repositories you do not own</p></li>
+</ul>
+</div>
+<section id="terminology-commits-branches-repositories-forks-clones">
+<h4>Terminology: Commits, branches, repositories, forks, clones<a class="headerlink" href="#terminology-commits-branches-repositories-forks-clones" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p><a class="reference external" href="https://coderefinery.github.io/git-intro/reference/#term-repository">repository</a>: The project, contains all data and history (commits, branches, tags).</p></li>
+<li><p><a class="reference external" href="https://coderefinery.github.io/git-intro/reference/#commit">commit</a>: Snapshot of the project, gets a unique identifier (e.g. <code class="docutils literal notranslate"><span class="pre">c7f0e8bfc718be04525847fc7ac237f470add76e</span></code>).</p></li>
+<li><p><a class="reference external" href="https://coderefinery.github.io/git-intro/reference/#branch">branch</a>: Independent development line. The main development line is often called <code class="docutils literal notranslate"><span class="pre">main</span></code>. Technically, a branch in Git
+is implemented as a pointer to a commit (imagine a sticky note with a branch name on it).</p></li>
+<li><p><a class="reference external" href="https://coderefinery.github.io/git-intro/reference/#tag">tag</a>: A pointer to one commit, to be able to refer to it later. Like a <a class="reference external" href="https://en.wikipedia.org/wiki/Commemorative_plaque">commemorative plaque</a>
+that you attach to a particular commit (e.g. <code class="docutils literal notranslate"><span class="pre">phd-printed</span></code> or <code class="docutils literal notranslate"><span class="pre">paper-submitted</span></code>).</p></li>
+<li><p><a class="reference external" href="https://coderefinery.github.io/git-intro/reference/#cloning">cloning <clone></a>: Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.</p></li>
+<li><p><a class="reference external" href="https://coderefinery.github.io/git-intro/reference/#forking">forking <fork></a>: Taking a copy of a repository (which is typically not yours) - your
+copy (fork) stays on GitHub/GitLab and you can make changes to your copy.</p></li>
+</ul>
+</section>
+<section id="cloning-a-repository">
+<h4>Cloning a repository<a class="headerlink" href="#cloning-a-repository" title="Link to this heading"></a></h4>
+<p>In order to make a complete copy a whole repository, the <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> command
+can be used. When cloning, all the files, of all or selected branches, of a
+repository are copied in one operation. Cloning of a repository is of relevance
+in a few different situations:</p>
+<ul class="simple">
+<li><p>Working on your own, cloning is the operation that you can use to create
+multiple instances of a repository on, for instance, a personal computer, a
+server, and a supercomputer.</p></li>
+<li><p>The parent repository could be a repository that you or your colleague own. A
+common use case for cloning is when working together within a smaller team
+where everyone has read and write access to the same Git repository.</p></li>
+<li><p>Alternatively, cloning can be made from a public repository of a code that
+you would like to use. Perhaps you have no intention to change the code, but
+would like to stay in tune with the latest developments, also in-between
+releases of new versions of the code.</p></li>
+</ul>
+<figure class="align-default" id="id1">
+<a class="with-border reference internal image-reference" href="https://coderefinery.github.io/git-collaborative/_images/forkandclone.png"><img alt="Forking and cloning" class="with-border" src="https://coderefinery.github.io/git-collaborative/_images/forkandclone.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Forking and cloning</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</section>
+<section id="forking-a-repository">
+<h4>Forking a repository<a class="headerlink" href="#forking-a-repository" title="Link to this heading"></a></h4>
+<p>When a fork is made on GitHub/GitLab a complete copy, of all or selected
+branches, of the repository is made. The copy will reside under a different
+account on GitHub/GitLab. Forking of a repository is of high relevance when
+working with a Git repository to which you do not have write access.</p>
+<ul class="simple">
+<li><p>In the fork repository commits can be made to the default branch (<code class="docutils literal notranslate"><span class="pre">main</span></code> or
+<code class="docutils literal notranslate"><span class="pre">master</span></code>), and to other branches.</p></li>
+<li><p>The commits that are made within the branches of the fork repository can be
+contributed back to the parent repository by means of <strong>pull or merge requests</strong>.</p></li>
+</ul>
+<div class="admonition-demo-forking-a-famous-repository admonition">
+<p class="admonition-title">Demo - forking a famous repository</p>
+<p>A demo with forking a famous repository.</p>
+</div>
+</section>
+<section id="exercise-suggesting-a-change-on-a-repository-you-do-not-own">
+<h4>Exercise - suggesting a change on a repository you do not own<a class="headerlink" href="#exercise-suggesting-a-change-on-a-repository-you-do-not-own" title="Link to this heading"></a></h4>
+<p>This exercise is the typical case where you find something that could be improved in a repository and you suggest a change. Compared to other scenarios (like a wiki) you do not need to have permissions to suggest a change. Furthermore, <strong>your change will not overwrite anything done by others</strong>, until the change is <strong>reviewed and approved</strong>.</p>
+<div class="admonition-exercise-add-a-new-recipe-to-somebody-else-s-cookbook exercise important admonition" id="exercise-0">
+<p class="admonition-title">Exercise: Add a new recipe to somebody else’s cookbook</p>
+<p>We work with this <a class="reference external" href="https://github.com/eglerean/data-stewards-recipe-book">recipe book repository</a>. This will be the <strong>upstream</strong> repository.</p>
+<p><strong>Exercise tasks</strong>:</p>
+<ol class="arabic simple">
+<li><p>Log in to GitHub.com and open the link above</p></li>
+<li><p>Click on <a class="reference external" href="https://github.com/eglerean/data-stewards-recipe-book/issues"><strong>Issues</strong></a> and then click the button <strong>New issue</strong> to create a new issue in the <strong>upstream repository</strong>. In the issue, you describe the change you want to make. Example: “Title: avocado pasta. Content: I will add a recipe for pasta with avocado”. Take note of the <strong>issue number</strong>: you will need it later.</p></li>
+<li><p>Click on <a class="reference external" href="https://github.com/eglerean/data-stewards-recipe-book"><strong>Code</strong></a> To see the repository structure. Find a subfolder where you want to add your new recipe and click on the subfolder. For a pasta recipe you will visit the subfolder <a class="reference external" href="https://github.com/eglerean/data-stewards-recipe-book/tree/main/pasta"><strong>pasta</strong></a></p></li>
+<li><p>Click on <strong>Add file</strong> and then “+ Create new file”.</p></li>
+<li><p>You will be asked to <strong>fork</strong> this repository to propose changes. Click on the green button <strong>Fork this repository</strong></p></li>
+<li><p>A file editor now opens and it will say “You’re making changes in a project you don’t have write access to. Submitting a change will write it to a new branch in your fork <strong>eglereanwebdev/data-stewards-recipe-book</strong>, so you can send a pull request.”</p></li>
+<li><p>Give your new file a name and write the recipe</p></li>
+<li><p>Click the green button “<strong>Commit changes…</strong>”. The commit window will pop up. Describe the change you did.</p></li>
+<li><p>GitHub will redirect you to a comparison of the changes you did in your <strong>forked repository</strong> versus the <strong>upstream</strong> repository.</p></li>
+<li><p>You can now open a pull request towards the upstream repository by clicking the green button <strong>Create pull request</strong></p></li>
+<li><p>In the page “Open a pull request” you will asked to give a title and explain what you did. Make sure you add “Closes #N” in the text, with <code class="docutils literal notranslate"><span class="pre">N</span></code> being the number of the issue you opened to explain what you were going to do. When ready, click the green button “<strong>Create pull request</strong>”</p></li>
+<li><p>The project owner will merge the pull requests OR will ask for changes.</p></li>
+<li><p>(Optional) After few pull requests are merged, yuo can update your fork with the changes from others.</p></li>
+<li><p>(Optional) Check that in your fork you can see changes from other people’s pull requests.</p></li>
+<li><p>(Optional) In step 4, you could have also edited a file instead of adding a new file. You can look for typos and suggest improvements.</p></li>
+</ol>
+</div>
+</section>
+<section id="advanced-topics">
+<h4>Advanced topics<a class="headerlink" href="#advanced-topics" title="Link to this heading"></a></h4>
+<section id="pull-requests-can-be-coupled-with-automated-testing">
+<h5>Pull requests can be coupled with automated testing<a class="headerlink" href="#pull-requests-can-be-coupled-with-automated-testing" title="Link to this heading"></a></h5>
+<p>We added an automated test here just for fun and so that you see that this is
+possible to do.</p>
+<p>In this exercise, the test is silly. It will check whether the recipe contains
+both an ingredients and an instructions section.</p>
+<p>In this example the test failed:</p>
+<figure class="align-default">
+<a class="with-border reference internal image-reference" href="https://coderefinery.github.io/git-collaborative/_images/all-checks-failed.png"><img alt="Screenshot of a failed test in a pull request" class="with-border" src="https://coderefinery.github.io/git-collaborative/_images/all-checks-failed.png" style="width: 60%;" />
+</a>
+</figure>
+<p>Click on the “Details” link to see the details of the failed test:</p>
+<figure class="align-default">
+<a class="with-border reference internal image-reference" href="https://coderefinery.github.io/git-collaborative/_images/check-details.png"><img alt="Screenshot of details why the test failed" class="with-border" src="https://coderefinery.github.io/git-collaborative/_images/check-details.png" style="width: 60%;" />
+</a>
+</figure>
+<p><strong>How can this be useful?</strong></p>
+<ul class="simple">
+<li><p>The project can define what kind of tests are expected to pass before a pull
+request can be merged.</p></li>
+<li><p>The reviewer can see the results of the tests, without having to run them
+locally.</p></li>
+</ul>
+<p><strong>How does it work?</strong></p>
+<ul class="simple">
+<li><p>We added a GitHub Actions workflow
+to automatically run on each push or pull request towards the <code class="docutils literal notranslate"><span class="pre">main</span></code> branch.</p></li>
+</ul>
+<p>What tests or steps can you image for your project to run automatically with
+each pull request?</p>
+</section>
+<section id="how-to-update-your-fork-with-changes-from-upstream">
+<h5>How to update your fork with changes from upstream<a class="headerlink" href="#how-to-update-your-fork-with-changes-from-upstream" title="Link to this heading"></a></h5>
+<p>This used to be difficult but now it is two mouse clicks:
+Navigate to your fork and notice how GitHub tells you that your fork is behind.
+In my case, it is 9 commits behind upstream. To fix this, click on “Sync fork”
+and then “Update branch”:</p>
+<figure class="align-default">
+<a class="with-border reference internal image-reference" href="https://coderefinery.github.io/git-collaborative/_images/sync-fork.png"><img alt="Screenshot on GitHub fork page showing that the fork is behind" class="with-border" src="https://coderefinery.github.io/git-collaborative/_images/sync-fork.png" style="width: 80%;" />
+</a>
+</figure>
+<p>After the update my “branch is up to date” with the upstream repository:</p>
+<figure class="align-default">
+<a class="with-border reference internal image-reference" href="https://coderefinery.github.io/git-collaborative/_images/fork-after-update.png"><img alt="Screenshot on GitHub after fork has been updated" class="with-border" src="https://coderefinery.github.io/git-collaborative/_images/fork-after-update.png" style="width: 80%;" />
+</a>
+</figure>
+</section>
+<section id="how-to-approach-other-peoples-repositories-with-ideas-changes-and-requests">
+<h5>How to approach other people’s repositories with ideas, changes, and requests<a class="headerlink" href="#how-to-approach-other-peoples-repositories-with-ideas-changes-and-requests" title="Link to this heading"></a></h5>
+<p><strong>Contributing very minor changes</strong></p>
+<ul class="simple">
+<li><p>Clone or fork+clone repository</p></li>
+<li><p>Create a branch</p></li>
+<li><p>Commit and push change</p></li>
+<li><p>Open a pull request or merge request</p></li>
+</ul>
+<p><strong>If you observe an issue and have an idea how to fix it</strong></p>
+<ul class="simple">
+<li><p>Open an issue in the repository you wish to contribute to</p></li>
+<li><p>Describe the problem</p></li>
+<li><p>If you have a suggestion on how to fix it, describe your suggestion</p></li>
+<li><p>Possibly <strong>discuss and get feedback</strong></p></li>
+<li><p>If you are working on the fix, indicate it in the issue so that others know that somebody is working on it and who is working on it</p></li>
+<li><p>Submit your fix as pull request or merge request which references/closes the issue</p></li>
+</ul>
+<div class="admonition-motivation admonition">
+<p class="admonition-title">Motivation</p>
+<ul class="simple">
+<li><p><strong>Inform others about an observed problem</strong></p></li>
+<li><p>Make it clear whether this issue is up for grabs or already being worked on</p></li>
+</ul>
+</div>
+<p><strong>If you have an idea for a new feature</strong></p>
+<ul class="simple">
+<li><p>Open an issue in the repository you wish to contribute to</p></li>
+<li><p>In the issue, write a short proposal for your suggested change or new feature</p></li>
+<li><p>Motivate why and how you wish to do this</p></li>
+<li><p>Also indicate where you are unsure and where you would like feedback</p></li>
+<li><p><strong>Discuss and get feedback before you code</strong></p></li>
+<li><p>Once you start coding, indicate that you are working on it</p></li>
+<li><p>Once you are done, submit your new feature as pull request or merge request which references/closes the issue/proposal</p></li>
+</ul>
+<div class="admonition-motivation admonition">
+<p class="admonition-title">Motivation</p>
+<ul class="simple">
+<li><p><strong>Get agreement and feedback before writing 5000 lines of code</strong> which might be rejected</p></li>
+<li><p>If we later wonder why something was done, we have the issue/proposal as
+reference and can read up on the reasoning behind a code change</p></li>
+</ul>
+</div>
+</section>
+</section>
+<section id="summary">
+<h4>Summary<a class="headerlink" href="#summary" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>This forking workflow lets you propose changes to repositories for
+which <strong>you have no write access</strong>.</p></li>
+<li><p>This is the way that much modern open-source software works.</p></li>
+<li><p>You can now contribute to any project you can view!</p></li>
+</ul>
+</section>
+</section>
+<span id="document-wrapup"></span><section id="wrap-up-and-where-to-go-from-here">
+<h3>Wrap up and where to go from here<a class="headerlink" href="#wrap-up-and-where-to-go-from-here" title="Link to this heading"></a></h3>
+<section id="explore-other-courses-and-networks-in-scientific-computing">
+<h4>Explore other courses and networks in scientific computing<a class="headerlink" href="#explore-other-courses-and-networks-in-scientific-computing" title="Link to this heading"></a></h4>
+<p><strong>Aalto Scientific Computing</strong>: <a class="reference external" href="https://scicomp.aalto.fi/">https://scicomp.aalto.fi/</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://scicomp.aalto.fi/help/garage/">Daily session for questions</a></p></li>
+<li><p>Research Software Engineers provide close support for anything we
+have covered in this workshop: <a class="reference external" href="https://scicomp.aalto.fi/rse/">https://scicomp.aalto.fi/rse/</a></p></li>
+</ul>
+<p><strong>CSC - IT Center for Science (Finland)</strong>: <a class="reference external" href="https://research.csc.fi/">https://research.csc.fi/</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://csc.fi/en/training-calendar/csc-research-support-coffee-every-wednesday-at-1400-finnish-time-2-2/">Weekly user support session</a></p></li>
+<li><p><a class="reference external" href="https://www.csc.fi/en/training#training-calendar">Training calendar</a></p></li>
+<li><p><a class="reference external" href="https://csc.fi/en/blog/csc-scientific-computing-ambassadors-strengthening-collaboration/">Check out the Scientific Computing Ambassadors</a></p></li>
+<li><p>Check out the <a class="reference external" href="https://wiki.eduuni.fi/spaces/csckorkeakoulut/pages/158139607/CSC+-+Data+Support+Network"><strong>data support network</strong></a></p></li>
+<li><p><a class="reference external" href="https://link.webropolsurveys.com/Participation/Public/52bbb5f3-8849-45e5-924b-5cae888b1a6f?displayId=Fin2037389">Join the data support network</a></p></li>
+</ul>
+<p><strong>The Carpentries</strong>: <a class="reference external" href="https://carpentries.org/">https://carpentries.org/</a></p>
+<ul class="simple">
+<li><p>Public reusable lesson programs &amp; workshops: Data -, Software and Library Carpentry</p></li>
+<li><p>Explore e.g. Software lesson curriculum: <a class="reference external" href="https://software-carpentry.org/lessons/">https://software-carpentry.org/lessons/</a></p></li>
+<li><p>Many more lessons available in the <a class="reference external" href="https://carpentries.org/lesson-development/community-lessons/">incubator</a></p></li>
+<li><p>Instructor- and lesson development training available for a fee</p></li>
+</ul>
+<p><strong>CodeRefinery</strong>: <a class="reference external" href="https://coderefinery.org/">https://coderefinery.org/</a></p>
+<ul class="simple">
+<li><p>Bi-yearly workshops on Research Software Development practices; next workshop autumn ‘25</p></li>
+<li><p>Materials available for self-learning and reuse: <a class="reference external" href="https://coderefinery.org/lessons/">https://coderefinery.org/lessons/</a></p></li>
+<li><p><a class="reference external" href="https://coderefinery.github.io/train-the-trainer/">Instructor training materials</a></p></li>
+</ul>
+</section>
+<section id="follow-coderefinery-and-spread-the-word-3">
+<h4>Follow CodeRefinery and spread the word &lt;3<a class="headerlink" href="#follow-coderefinery-and-spread-the-word-3" title="Link to this heading"></a></h4>
+<ul class="simple">
+<li><p>Mastodon: <a class="reference external" href="https://fosstodon.org/&#64;coderery">&#64;coderefinery&#64;fosstodon.org</a>.</p></li>
+<li><p>BlueSky: <a class="reference external" href="https://bsky.app/profile/coderefinery.org">&#64;coderefinery.org</a></p></li>
+<li><p>LinkedIn: <a class="reference external" href="https://www.linkedin.com/company/88414793">CodeRefinery</a></p></li>
+<li><p><strong>Become a CodeRefinery ambassador</strong> by <a class="reference external" href="https://postit.csc.fi/sympa/subscribe/coderefinery-ambassadors/">signing up to our ambassador mailing list</a></p></li>
+<li><p><strong>Join as an Team Leader / local host.</strong> Bring your group/classroom, learn together.</p></li>
+<li><p><strong>Become part of the team</strong> CodeRefinery lives from <strong>in-kind</strong> contributions by organizations (your organization sponsors your worktime to the project)</p></li>
+<li><p>CodeRefinery community lives in the <strong>Zulip chat</strong>: <a class="reference external" href="https://coderefinery.zulipchat.com">https://coderefinery.zulipchat.com</a></p></li>
+<li><p>Follow what we do by signing up to our <strong>newsletter</strong>: <a class="reference external" href="https://coderefinery.org/#newsletter">https://coderefinery.org/#newsletter</a></p></li>
+</ul>
+</section>
+<section id="got-interested-in-research-software-development">
+<h4>Got interested in Research Software Development?<a class="headerlink" href="#got-interested-in-research-software-development" title="Link to this heading"></a></h4>
+<section id="join-the-nordic-research-software-engineers-nordic-rse">
+<h5>Join the Nordic Research Software Engineers (<a class="reference external" href="https://nordic-rse.org">Nordic-RSE</a>)<a class="headerlink" href="#join-the-nordic-research-software-engineers-nordic-rse" title="Link to this heading"></a></h5>
+<p>A <strong>Research Software Engineer</strong> combines research knowledge with
+software development experience, just like we have learned here.</p>
+<ul class="simple">
+<li><p>Community, seminars, and other events.</p></li>
+<li><p>Chat (part of CodeRefinery chat): <a class="reference external" href="https://coderefinery.zulipchat.com">https://coderefinery.zulipchat.com</a>, <code class="docutils literal notranslate"><span class="pre">#nordic-rse</span></code></p></li>
+<li><p>LinkedIn: <a class="reference external" href="https://www.linkedin.com/company/nordic-rse/">https://www.linkedin.com/company/nordic-rse/</a></p></li>
+<li><p>Mastodon: <a class="reference external" href="https://fosstodon.org/&#64;nordic_rse">https://fosstodon.org/&#64;nordic_rse</a></p></li>
+<li><p>BlueSky: <a class="reference external" href="https://bsky.app/profile/nordic-rse.bsky.social">https://bsky.app/profile/nordic-rse.bsky.social</a></p></li>
+</ul>
+<p>Join us for second in-person conference May 20.+21. 2025 in Gothenburg Sweden: <a class="reference external" href="https://nordic-rse.org/nrse2025/">https://nordic-rse.org/nrse2025/</a></p>
+</section>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-quick-reference"></span><section id="quick-reference">
+<h3>Quick Reference<a class="headerlink" href="#quick-reference" title="Link to this heading"></a></h3>
+</section>
+<span id="document-guide"></span><section id="instructor-s-guide">
+<h3>Instructor’s guide<a class="headerlink" href="#instructor-s-guide" title="Link to this heading"></a></h3>
+<p>To be filled soon.</p>
+<section id="why-we-teach-this-lesson">
+<h4>Why we teach this lesson<a class="headerlink" href="#why-we-teach-this-lesson" title="Link to this heading"></a></h4>
+</section>
+<section id="intended-learning-outcomes">
+<h4>Intended learning outcomes<a class="headerlink" href="#intended-learning-outcomes" title="Link to this heading"></a></h4>
+</section>
+<section id="timing">
+<h4>Timing<a class="headerlink" href="#timing" title="Link to this heading"></a></h4>
+</section>
+<section id="preparing-exercises">
+<h4>Preparing exercises<a class="headerlink" href="#preparing-exercises" title="Link to this heading"></a></h4>
+<p>e.g. what to do the day before to set up common repositories.</p>
+</section>
+<section id="other-practical-aspects">
+<h4>Other practical aspects<a class="headerlink" href="#other-practical-aspects" title="Link to this heading"></a></h4>
+</section>
+<section id="interesting-questions-you-might-get">
+<h4>Interesting questions you might get<a class="headerlink" href="#interesting-questions-you-might-get" title="Link to this heading"></a></h4>
+</section>
+<section id="typical-pitfalls">
+<h4>Typical pitfalls<a class="headerlink" href="#typical-pitfalls" title="Link to this heading"></a></h4>
+</section>
+</section>
+</div>
+</section>
+<section id="who-is-the-course-for">
+<span id="learner-personas"></span><h2>Who is the course for?<a class="headerlink" href="#who-is-the-course-for" title="Link to this heading"></a></h2>
+<p>This course is for you, if you are in a position where you might want to support researchers with programming and its reproducibility.</p>
+<p>This course is not designed for “professional software engineers” or to make you one.</p>
+</section>
+<section id="about-the-course">
+<h2>About the course<a class="headerlink" href="#about-the-course" title="Link to this heading"></a></h2>
+<p>In this course, you will get a quick overview of tools and best practices for research software development. This course will not teach a programming language, but we aim to show you some tools and techniques to be able to guide researchers to do programming well and avoid common inefficiency traps. The tools we teach are practically a requirement for any researcher who needs to write code. The main focus is on using Git for efficiently writing and maintaining research software or other content.</p>
+</section>
+<section id="see-also">
+<h2>See also<a class="headerlink" href="#see-also" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://coderefinery.org/lessons/#lessons-that-we-teach-in-our-tools-workshops">All lessons of a full CodeRefinery workshop</a></p>
+<p>You can also find recordings of the full lessons on Youtube:</p>
+<ul class="simple">
+<li><p>Version Control: <a class="reference external" href="https://www.youtube.com/watch?v=0u2K7KJBL-U&amp;amp;list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&amp;amp;index=2">Intro pt 1</a> , <a class="reference external" href="https://www.youtube.com/watch?v=8uay_XoNRck&amp;amp;list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&amp;amp;index=4">intro pt 2</a>, <a class="reference external" href="https://www.youtube.com/watch?v=4Uf7eVSCZeU&amp;amp;list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&amp;amp;index=6">collaborative version control</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=dWemSikTR3A&amp;amp;list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&amp;amp;index=7">Reproducible research</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=qUc7PN0NNvk&amp;amp;list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&amp;amp;index=8">Social coding</a></p></li>
+</ul>
+<p><a class="reference external" href="https://www.youtube.com/playlist?list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H%3E">Full playlist on youtube</a>, inlcuding also Documentation, Jupyter, modular code develeopment and automated testing.</p>
+</section>
+<section id="credits">
+<h2>Credits<a class="headerlink" href="#credits" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, CodeRefinery contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
