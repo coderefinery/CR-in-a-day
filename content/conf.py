@@ -21,7 +21,7 @@ project = "CodeRefinery in a day"
 copyright = "2025, CodeRefinery contributors"
 author = "CodeRefinery contributors"
 github_user = "coderefinery"
-github_repo_name = ""  # auto-detected from dirname if blank
+github_repo_name = "CR-in-a-day"  # auto-detected from dirname if blank
 github_version = "main"
 conf_py_path = "/content/"  # with leading and trailing slash
 
