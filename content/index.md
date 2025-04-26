@@ -48,7 +48,7 @@ Please note that some of the materials are hosted in other repositories. Make su
 getting-ready.md
 Motivation for version control <https://coderefinery.github.io/git-intro/motivation/>
 Sharing your work <https://coderefinery.github.io/git-intro/sharing/>
-Collaborative git <https://coderefinery.github.io/git-collaborative/same-repository/>
+collaborativegit.md
 Reproducible research intro <https://coderefinery.github.io/reproducible-research/intro/>
 Reproducible research motivation <https://coderefinery.github.io/reproducible-research/motivation/>
 Project organization <https://coderefinery.github.io/reproducible-research/organizing-projects/>
