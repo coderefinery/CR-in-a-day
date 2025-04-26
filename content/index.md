@@ -12,6 +12,26 @@ To follow the course, you will need a GitHub account: [Instructions](./getting-r
 
 :::
 
+## Why is this important?
+
+When in doubt if what you are doing is important in research, always reflect using the Allea European Code of Conduct for Research Integrity (2023)
+
+The four Allea principles are:
+
+- **Reliability** in ensuring the quality of research, reflected in the design, methodology, analysis, and use of resources.
+- **Honesty** in developing, undertaking, reviewing, reporting, and communicating research in a ***transparent***, fair, full, and unbiased way.
+- **Respect** for colleagues, research participants, research subjects, society, ecosystems, cultural heritage, and the environment.
+- **Accountability** for the research ***from idea to publication***, for its management and organisation, for training, supervision, and mentoring, and for its wider societal impacts.
+
+Transparency and accountability from idea to publication are fundamental requirements of reproducible research. What we will cover in this course are all the necessary steps needed so that the *computational/methodological/digital* part of the research work is done transparently and allows others to verify and reproduce it.  
+
+**However**, we are not *just* doing this to follow research integrity principles, we are also doing this to improve how we work with other collaborators, and especially **we do this to help our future self** so that it can always be possible to travel back in time and see what was done at a certain part of the research process.
+
+![Final.doc from PhDComics](http://www.phdcomics.com/comics/archive/phd101212s.gif) 
+
+([Source](https://phdcomics.com/comics/archive.php?comicid=1531))
+
+
 ## Schedule
 
 Please note that some of the materials are hosted in other repositories. Make sure to always come back here to find the next link.
@@ -20,12 +40,11 @@ Please note that some of the materials are hosted in other repositories. Make su
 :delim: ;
 :widths: auto
 
-
 9:15-10:00 ; Introduction to Version Control [motivation](https://coderefinery.github.io/git-intro/motivation/) and [sharing](https://coderefinery.github.io/git-intro/sharing/) 
 10:00-10:10 ; Break 
-10:10-11:00 ; [Collaborative version control](https://coderefinery.github.io/git-collaborative/same-repository/) 
-11:00-12:00 ; Lunchbreak
-12:00-12:50 ; Continued, forking exercise
+10:10-11:00 ; [Collaborating with git](./collaborativegit.md) 
+11:00-12:00 ; *Lunchbreak*
+12:00-12:50 ; Collaborating with git exercise
 12:50-13:00; Break
 13:00-14:00 ; **[Reproducibility and code](https://coderefinery.github.io/reproducible-research)**: 
 5 min; Reproducible research intro
