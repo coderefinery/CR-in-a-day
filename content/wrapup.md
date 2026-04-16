@@ -1,5 +1,9 @@
 # Wrap up and where to go from here
 
+## Connection to data steward work
+
+TODO: XX
+
 ## Explore other courses and networks in scientific computing
 
 **Aalto Scientific Computing**: <https://scicomp.aalto.fi/>
@@ -12,7 +16,7 @@
 * [Training calendar](https://www.csc.fi/en/training#training-calendar)
 * [Check out the Scientific Computing Ambassadors](https://csc.fi/en/blog/csc-scientific-computing-ambassadors-strengthening-collaboration/)
 * Check out the [**data support network**](https://wiki.eduuni.fi/spaces/csckorkeakoulut/pages/158139607/CSC+-+Data+Support+Network)
-* [Join the data support network](https://link.webropolsurveys.com/Participation/Public/52bbb5f3-8849-45e5-924b-5cae888b1a6f?displayId=Fin2037389)
+
 
 **The Carpentries**: <https://carpentries.org/>
 * Public reusable lesson programs & workshops: Data -, Software and Library Carpentry 
@@ -21,7 +25,7 @@
 * Instructor- and lesson development training available for a fee
 
 **CodeRefinery**: <https://coderefinery.org/>
-* Bi-yearly workshops on Research Software Development practices; next workshop autumn '25
+* Bi-yearly workshops on Research Software Development practices; next workshop autumn '26
 * Materials available for self-learning and reuse: <https://coderefinery.org/lessons/>
 * [Instructor training materials](https://coderefinery.github.io/train-the-trainer/)
 
@@ -50,4 +54,4 @@ software development experience, just like we have learned here.
 - Mastodon: <https://fosstodon.org/@nordic_rse>
 - BlueSky: <https://bsky.app/profile/nordic-rse.bsky.social>
 
-Join us for second in-person conference May 20.+21. 2025 in Gothenburg Sweden: <https://nordic-rse.org/nrse2025/>
+Join us for third in-person conference May XX

@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: "If you use this lesson material, please cite it using these metadata."
+authors:
+- name: "CodeRefinery"
+- family-names: "Wittke"
+  given-names: "Samantha"
+- family-names: "Glerean"
+  given-names: "Enrico"
+title: "CodeRefinery in a day"
+type: "data"
+abstract: "TODO"
+version: 2026-04-16
+date-released: 2026-04-16
+url: "https://coderefinery.github.io/CR-in-a-day"
+license: CC-BY-4.0
+repository-code: "https://github.com/coderefinery/CR-in-a-day"
