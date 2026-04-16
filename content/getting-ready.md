@@ -26,7 +26,7 @@ hosting services but this is work in progress.
 GitHub may require you to enable multi-factor authentication
 (MFA). This is generally a good thing, but may take some time to set
 up. Luckily, you probably don't have to do this immediately. If you
-are prompted to enable MFA before the end of CodeRefinery, follow
+are prompted to enable MFA before the end of the course, follow
 GitHub's instructions since they are usually pretty good.
 
 
