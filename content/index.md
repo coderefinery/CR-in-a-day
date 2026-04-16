@@ -31,50 +31,65 @@ Transparency and accountability from idea to publication are fundamental require
 
 ([Source](https://phdcomics.com/comics/archive.php?comicid=1531))
 
+```{admonition} FAIR for Research Software (FAIR4RS) 
+The FAIR4RS Principles adapt the original FAIR data principles to improve the **Findability, Accessibility, Interoperability, and Reusability** of research software. They provide guidelines to make research software more open, discoverable, citable, and reusable, which supports reproducibility and open science. The summary of the FAIR4RS below is a compressed version of the principles listed in [Barker, Michelle, et al. "Introducing the FAIR Principles for research software." Scientific Data 9.1 (2022): 622](https://www.nature.com/articles/s41597-022-01710-x).
+
+- **Findable**: Software should have a globally unique and persistent identifier  
+  (e.g. clear versioning of releases, DOI from Zenodo when depositing a software release, software metadata in citation file).
+- **Accessible**: Software and metadata should be retrievable using open protocols  
+  (e.g. downloading from GitHub or Zenodo).
+- **Interoperable**: Software should use open formats and standards to work with other tools  
+  (e.g. input/output files in CSV, dependencies listed in `requirements.txt` or `environment.yml`, configuration files in yaml).
+- **Reusable**: Software should have clear licensing, documentation, and provenance  
+  (e.g. a standard license and a `README` with usage instructions, authors listed with ORCIDs).
+
+There are great resources to self-evaluate the *FAIRness* of your research software:
+- [FAIR Software Checklist](https://fairsoftwarechecklist.net/) which provides a questionnaire and even a badge of how FAIR the software is
+- [FAIR Software NL](https://fair-software.nl/) highlights with nice visuals the five most important elemnts of FAIR4RS (1. Public accessible repository with version control; 2. License; 3. Software registry; 4. Software citation file; 5. Software quality checklist)
+```
+
 
 ## Schedule
-
-Please note that some of the materials are hosted in other repositories. Make sure to always come back here to find the next link.
 
 ```{csv-table}
 :delim: ;
 :widths: auto
 
-9:15-10:00 ; Introduction to Version Control [motivation](https://coderefinery.github.io/git-intro/motivation/) and [sharing](https://coderefinery.github.io/git-intro/sharing/) 
-10:00-10:10 ; Break 
-10:10-11:00 ; [Collaborating with git](./collaborativegit.md) 
-11:00-12:00 ; *Lunchbreak*
-12:00-12:50 ; Collaborating with git exercise
-12:50-13:00; Break
-13:00-14:00 ; **[Reproducibility and code](https://coderefinery.github.io/reproducible-research)**: 
-5 min; Reproducible research intro
-10 min; Reproducible research motivation
-15 min; Organizing projects
-15 min; Environments and containers
-14:00-14:10 ; Break
-14:10-14:45; **Social coding**: 
-10 min;  [Social coding](https://coderefinery.github.io/social-coding/)
-10 min;  [Software licensing with cake](https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/#1)
-5 min;  [Software licensing](https://coderefinery.github.io/social-coding/software-licensing/)
-10 min;  [Software citation](https://coderefinery.github.io/social-coding/software-citation/)
-14:45-15:00; [Wrapup](./wrapup.md) 
+9:15-09:25 ; Welcome, notes, icebreaker and [setup](xx)
+9:25-9:30 ; Intro (this page)
+9:30-9:40 ; Motivation for version control, terminology
+9:40-10:20 ; Exercise type along
+9:55-10:05 ; Break
+10:05-10:20 ; Sharing
+10:20-10:25 ; History and summary
+10:25-11:00 ; collaborate on git
+11:00-12:15 ; lunch break
+12:15-12:30 ; Exercise in breakoutrooms
+12:30-13:00 ; Demo - How PRs look, code review and merge, issue linking, history, branch naming
+13:00-13:10 ; break
+13:20-13:25 ; Reproducible research, motivation
+13:25-13:45 ; Discuss reading assignment in breakoutrooms
+13:45-14:00 ; Other topics in reproducible research
+14:00-14:10 ; break
+14:10-14:20 ; Motivation on social coding 
+14:20-14:35 ; Licensing
+14:35-14:45 ; Software citations 
+14:45-14:55 ; Connecting to other topics
+14:55-15:00 ; Wrap-up
 ```
+
+
+
 
 ```{toctree}
 :caption: The lesson
 :maxdepth: 1
 
 getting-ready.md
-Motivation for version control <https://coderefinery.github.io/git-intro/motivation/>
-Sharing your work <https://coderefinery.github.io/git-intro/sharing/>
-collaborativegit.md
-Reproducible research intro <https://coderefinery.github.io/reproducible-research/intro/>
-Reproducible research motivation <https://coderefinery.github.io/reproducible-research/motivation/>
-Project organization <https://coderefinery.github.io/reproducible-research/organizing-projects/>
-Social coding <https://coderefinery.github.io/social-coding/>
-Software licensing with cake <https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/#1>
-Software licensing <https://coderefinery.github.io/social-coding/software-licensing/>
-Software citation <https://coderefinery.github.io/social-coding/software-citation/>
+git-intro.md
+git-collaborative.md
+reproducible_research.md
+social_coding.md
 wrapup.md
 ```
 
@@ -110,3 +125,5 @@ You can also find recordings of the full lessons on Youtube:
 [Full playlist on youtube](https://www.youtube.com/playlist?list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H>), inlcuding also Documentation, Jupyter, modular code develeopment and automated testing.
 
 ## Credits
+
+The CodeRefinery contributors for lessons introduction to version control, collaborative git, reproducible research and social coding. 
