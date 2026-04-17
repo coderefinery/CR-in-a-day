@@ -154,3 +154,86 @@ After the update my "branch is up to date" with the upstream repository:
 - You can now contribute to any project you can view!
 ```
 
+# Making a suggestion 
+
+<br>
+
+Full workflow **GitHub**:
+
+1. Suggest idea: issue
+2. Discussion -> OK
+3. Separate your work: branch / fork
+4. Work: work - commit (one or more) 
+6. Suggest work: pull request 
+7. Accept: merge
+
+➡ You made it to history!
+
+???
+
+This is the workflow for any repo you find on GitHub
+
+---
+
+# (Optional) Making a suggestion 
+
+<br>
+
+Full workflow **local**:
+
+1. Suggest idea: issue
+2. Discussion -> OK
+3. Get the work: (fork) - clone - pull 
+4. Work: work - add - commit (one or more) 
+5. Put it on GitHub: push 
+6. Suggest work: pull request 
+7. Accept: merge
+
+➡ You made it to history!
+
+---
+
+# (Optional) Demo - exploring an existing repo 
+
+Just watch :)
+
+<br>
+<br>
+
+- History
+- Branches
+- Forks
+- Issues
+- Pull requests
+
+<br>
+
+➡ <https://github.com/the-turing-way/the-turing-way/>
+
+---
+
+# Demo - contribute
+
+You may suggest your own recipes!
+
+<br>
+
+- History
+- Issue
+- Fork / Branch
+- Work
+- Pull request
+
+New file vs changing file
+
+<br>
+
+➡ <https://github.com/samumantha/data_support_recipe_book>
+
+???
+
+Commit history: 
+- Who?
+- What?
+- Why? -> Commit message!
+- When?

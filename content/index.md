@@ -66,11 +66,11 @@ There are great resources to self-evaluate the *FAIRness* of your research softw
 11:00-12:15 ; lunch break
 12:15-12:30 ; Exercise in breakoutrooms
 12:30-13:00 ; Demo - How PRs look, code review and merge, issue linking, history, branch naming
-13:00-13:10 ; break
+13:00-13:10 ; Break
 13:20-13:25 ; Reproducible research, motivation
 13:25-13:45 ; Discuss reading assignment in breakoutrooms
 13:45-14:00 ; Other topics in reproducible research
-14:00-14:10 ; break
+14:00-14:10 ; Break
 14:10-14:20 ; Motivation on social coding 
 14:20-14:35 ; Licensing
 14:35-14:45 ; Software citations 
