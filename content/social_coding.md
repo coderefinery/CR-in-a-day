@@ -6,7 +6,7 @@
 ```
 
 :::{info}
-This materials is adoopted from CodeRefinery lesson XX
+This materials is adoopted from CodeRefinery lesson [Social Coding](xx)
 :::
 
 ## Comparing sharing papers and sharing code
@@ -135,8 +135,6 @@ Whether and what we can share depends on how we obtained the components.
 
 
 
-
-
 ## Copyright
 
 ```{figure} img/tate.jpg
@@ -179,7 +177,6 @@ Comments:
 TODO: github makes it easy, use standard license 
 
 
-
 ## Software citation
 
 ```{questions}
@@ -209,7 +206,6 @@ Is it enough to make the code public for the code to remain **findable and acces
 
 
 ### How to make your software citable
-
 
 
 **Checklist for making a release of your software citable**:
@@ -293,4 +289,5 @@ software citation examples):
 ```{keypoints}
 - **You cannot ignore licensing**: default is "no one can make copies or
   derivative works".
+  Make it easy for others to cite your software by providing a citation file.
 ```
