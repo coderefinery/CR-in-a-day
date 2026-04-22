@@ -1,13 +1,12 @@
 # Introduction to version control
 
 :::{objectives}
-- Understand the basic principles of version control and interactive computing platforms to support computational reproducibility.
-- Utilize the basic features of Git(-Hub) and Jupyter notebooks.
-- Know where those tools can be run and found.
+- Understand the basic principles of version control
+- Utilize the basic features of git on GitHub
 :::
 
 :::{info}
-This materials is adoopted from CodeRefinery lesson XX
+This materials is adoopted from CodeRefinery lesson ["Introduction to version control"](XX) with focus on working online with GitHub.
 :::
 
 It is normal that it may be overwhelming. Take it as a starting point and come back when you want to try something new. You may not have use for these tools yourself, but good to know anyway to potentially forward researchers.
@@ -86,15 +85,13 @@ Example of a git-annotated code with code and history side-by-side.
 Permalink that points to a code portion.
 :::
 
-### Git repositories - a place to store
+### Terminology: Git repositories - a place to store
 
-.quote[A repository is the most basic element of GitHub. It's a place where you can **store your code**, your files, and each file's **revision history**. Repositories can be **owned by persons or organisations**, have **multiple collaborators** and can be either **public or private**]
+"A repository is the most basic element of GitHub. It's a place where you can **store your code**, your files, and each file's **revision history**. Repositories can be **owned by persons or organisations**, have **multiple collaborators** and can be either **public or private**"
+-Adapted from <https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories>
 
-.cite[Adapted from <https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories>]
-
-Locally, a Git repository is the .git/ folder inside a project. This repository tracks all changes made to files in your project, building a history over time. Meaning, if you delete the .git/ folder, then you delete your project’s history.
-
-.cite[Adapted from <https://www.gitkraken.com/learn/git/tutorials/what-is-a-git-repository>]
+Locally, a Git repository is the .git/ folder inside a project. This repository tracks all changes made to files in your project, building a history over time. Meaning, if you delete the .git/ local folder, then you delete your local project’s history.
+- Adapted from <https://www.gitkraken.com/learn/git/tutorials/what-is-a-git-repository>
 
 ## Demo - exploring a repository online
 
@@ -115,29 +112,34 @@ Numpy is a popular Python package used in almost all research code. It has a lar
 
 ## Terminology: Commit
 
-.quote[Snapshot of current state of your repository
-... like taking a picture with metadata]
+"A commit is a snapshot of current state of your repository
+... like taking a picture with metadata"
 
-- Who?
-- What?
-- Why? -> Commit message!
-- When?
+Commits include information, such as
+- Who changed/created something?
+- What was changed/created?
+- When was it changed/created?
 
--> Commit messages make the history!
+In addition we can (should) provide information on:
+- Why was it changed/created? -> This information we have to provide in the commit message!
+
+-> Commit messages make the history that we can browse.
+
+TODO: Link to funny commit messages webpage?
 
 ## Terminology: Clone - download
 
-.quote[...get the latest (working) version on your computer]
+Cloning is a wat get the latest (working) version of a repository to your computer.
 
-Download not only the files, but also the history.
+Cloning also includes the history and is therefore preferred over "pure" download or copy/paste of content.
 
-## Git vs GitHub
+## Terminology: Git vs GitHub
 
 Git is a tool/format for version control. It can be used via the terminal or be inbuilt to integrated development environments (IDE) like VSCode, RStudio, Jupyter. Alternative tools are for example [Subversion](https://subversion.apache.org),[Mercurial](https://www.mercurial-scm.org), or [Pijul](https://pijul.org/).
 
-GitHub is a osting service for Git repositories with web interface. It is one place to **find the source** of software, webpages, presentations, books, games, and a **place to collaborate** and share.  Alternative services for example [GitLab](xx) and [Codeberg](xx).
+GitHub is a hosting service for Git repositories with web interface. It is one place to **find the source** of software, webpages, presentations, books, games, and a **place to collaborate** and share.  Alternative services for example [GitLab](xx) and [Codeberg](xx).
 
-## What we typically like to snapshot
+## What we typically like to version control (/"track")
 
 - Software (this is how it started but Git/GitHub can track a lot more)
 - Scripts
@@ -151,7 +153,7 @@ Do not use git for:
 
 - Secrets
 - Passwords
-- Binaries; files that are difficult to diff
+- Binaries (e.g. `.exe` files)
 - Files generated from builds
 
 
@@ -159,9 +161,9 @@ Do not use git for:
 
 Despite the benefits, let's be honest, there are some difficulties:
 
-- One more thing to learn (it's probably worth it and as a researcher will save you more time in the long run; basic career skill).
+- One more thing to learn (it's probably worth it and as a researcher, it will save you more time in the long run; basic career skill).
 - Difficult if your collaborators don't want to use it (in the worst case, you
-  can version control **on your side** and email them versions).
+  can still use version control **on your side** and email them versions).
 - Advanced things can be difficult, but basics are often enough (ask others for help when needed).
 
 
@@ -178,66 +180,90 @@ Why git?
 
 Note that many organisations have their own **In-house GitLab**: This lets you host your own repositories safely within the walls of your organisation.
 
-For collaboration in the Nordics, data kept in Denmark: [Nordic GitLab hosted by DeIC](https://coderefinery.org/repository/)
+For collaboration in the Nordics we have the [Nordic GitLab hosted by DeIC](https://coderefinery.org/repository/), hosted on servers in Denmark.
 
+## Exercise: Our first repository
 
-## Scenarios for working with GitHub
+:::{exercise}
 
-:::[discussion]
+Let's create our first online repository! We pretend to be a researcher writing some code on their own computer who now wants to collaborate with others and use GitHub for it. This is a beginner scenario, avoiding separate tools and use of command line. See below for workflow when using Git(Hub) more than once in a while.
 
+1. Create a plain text file on your computer, using a text editor of your choice. 
+2. Fill it with some (random) text.
+3. Save the file (somewhere) on your computer, call it `random.txt`.
+4. Now we open [github.com](https://github.com) and log in.
+5. To deposit our text file, we first need to **create a repository**.
+5.1 TODO: Screenshot of github with highlighted "create repo"
+5.2 TODO: Screenshot with create repo interface, explain form
+5.3 TODO: Screenshot of empty repo page, explain what is there, link to numpy repo
+6. Upload your text file created earlier
+6.1 TODO: Screenshot of where to click to upload
+6.2 TODO: Screenshot of upload form, explain, link "main" to branches mentioned earlier
 
-# My own GitHub repository
+You now have created your own repository and added a file! You can explore the history (TODO: screenshot) to observe your progress :)
+The link to your repository is your post-day4 assignment which needs to be submitted via moodle.
 
-## ... continue work on GitHub
+:::
 
-1. Work on it, make updates on GitHub, ...
-2. Commit when done (per file): take snapshots of units of work (one)
+## Exercise: Editing files online
 
+:::{exercise}
 
-# My own GitHub repository
+Let's now use the GitHub web interface to edit a file that is already there. This can be very handy when you just want to edit something small in one file. For larger edits, we refer again to the workflows below. Though, GitHub these days also provides online editors. Something to explore by yourself. 
 
-## ... continue work locally
+1. In your repositories main page `github.com`, find the `README.md` file and click it
+2. Now find the edit button, pen symbol on top right of the README.md page
+3. Edit the text in your README.md, you can for example write that this repository is part of an exercise in the Data Steward training 2026.
+4. Safe your edits. Observe how it is the same procedure as when uploading new file, branch, commit message. 
 
-1. Clone: get a copy to my computer
-2. Work on it, make updates, ...
-3. Add, Commit: take snapshots of units of work (one or many)
-4. Push: submit snapshots to GitHub
+:::
 
-.quote[Pull: Get latest version from GitHub]
+:::{info}
 
+## Scenarios for working with GitHub by yourself
 
+### Starting a new repository
 
-# Starting a new repository
+Create a new repository: 
 
+- Namespace (your own username vs organization)
+- Name (unique and descriptive)
+- Description (What will help you remember what this repository is for?)
+- README (always good to add a README)
+- LICENSE (good to add one as early as possible)
+- `.gitignore` (this becomes important when you work with git and GitHub on own computer)
 
-Create a new repository
-
-- Namespace
-- Name
-- Description
-- README
-- LICENSE
-- `.gitignore`
-
-Add new file
+Add new file: 
 
 - Edit
 - (Special: license/citation.cff)
 - Commit
 - `main`
 
-History
+### Working with my own GitHub repository
 
-Annotate
+#### ... on GitHub (see also exercise above!)
 
-New file: type license or citation.cff into filename and check options
-Annotate: File -> Preview - Code - Blame
+1. Work on single files, and one at a time ...
+2. Commit when done: take snapshots of units of work (one file at a time)
+
+Working on GitHub can be useful for small edits, like fixing a typo or changes that relate to a single file. 
 
 
+#### ... locally 
 
+1. Clone: get a copy of the content (with metadata and history) to my computer
+2. Work on it using any editor, make updates, add files, remove files,  ...
+3. git add and git commit: take snapshots of units of work (can be changes in one or many files)
+4. Push: submit snapshots to GitHub, so that others can see
 
+When you get back to it later: Instead of clone, you git pull: Get latest version from GitHub
 
+See also next lesson.
+
+:::
 
 ```{keypoints}
-- TODO
+- git is a popular version control tool, often used together with GitHub, an online hosting platform
+- Various usage scenarios exist
 ``` 
