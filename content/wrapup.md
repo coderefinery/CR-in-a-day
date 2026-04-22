@@ -2,7 +2,9 @@
 
 ## Connection to data steward work
 
-TODO: XX
+You may not necessarily have use for all of the tools mentioned today, though you will likely be in contact with researchers either already working with these tools or they may face some challenges which these tools can support solving. 
+
+If you want to dive deeper into the tools presented here, join us for the next CodeRefinery workshop (TODO: Link) or check out the CodeRefinery lesson materials, they are also useful for self-study. 
 
 ## Explore other courses and networks in scientific computing
 
@@ -54,4 +56,4 @@ software development experience, just like we have learned here.
 - Mastodon: <https://fosstodon.org/@nordic_rse>
 - BlueSky: <https://bsky.app/profile/nordic-rse.bsky.social>
 
-Join us for third in-person conference May XX
+Join us for third in-person conference in Tromsø in June: (TODO: link)
