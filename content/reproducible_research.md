@@ -7,7 +7,7 @@
 :::
 
 :::{info}
-This materials is adoopted from CodeRefinery lesson XX
+This materials is adoopted from CodeRefinery lesson [Reproducible research](xx)
 :::
 
 ## Intro
@@ -92,11 +92,18 @@ Available at: https://digitalcommons.du.edu/collaborativelibrarianship/vol9/iss2
 This also means that you can think about it from the beginning of your research life cycle!
 
 
-----
+## Discussion: Reading assignment
 
 :::{discussion}
 
-TODO: Discuss the reading assignment, some questions, use collab notes to summarize
+In small groups, discuss the reading assignment for today (TODO: link)
+
+1. What may be barriers to implementation?
+2. What could motivate researchers to care about implementation?
+3. How can we support researchers with the implementation? 
+Bonus: Do you know any good tutorials for any of the topics?
+
+Report back in the collaborative notes.
 
 :::
 
@@ -107,7 +114,7 @@ One of the first steps to make your work reproducible is to organize your projec
 Let's go over some of the basic things which people have found to work (and not to work).
 
 
-## Directory structure for projects
+### Directory structure for projects
 
 - Project files in a **single directory**
 - **Different projects** should have **separate directories**
@@ -141,7 +148,7 @@ project_name/
 
 ---
 
-## Tracking source code, data, and results
+### Tracking source code, data, and results
 
 - All code is version controlled and goes in the `src/` or `source/` directory
 - Include appropriate LICENSE file and information on software requirements
@@ -154,10 +161,10 @@ project_name/
   $ git tag -a thesis-submitted -m "this is the submitted version of my thesis"
   ```
 
-Check the [Git-intro lesson](https://coderefinery.github.io/git-intro/) for a reminder.
+Check the [Git-intro lesson](https://coderefinery.github.io/git-intro/) for further info.
 
 
-## Some tools and templates
+### Some tools and templates
 
 - [R devtools](https://devtools.r-lib.org/)
 - [Python cookiecutter template](https://github.com/Materials-Data-Science-and-Informatics/fair-python-cookiecutter)
@@ -256,11 +263,7 @@ than debugging. The more often you re-create your environment, the
 more reproducible it is.
 
 
-
-
-
 ## Workflow tools
-
 
 
 Example (for one book only):
