@@ -6,13 +6,24 @@
 :::
 
 :::{info}
-This materials is adoopted from CodeRefinery lesson ["Introduction to version control"](XX) with focus on working online with GitHub.
+This materials is adopted from CodeRefinery lesson ["Introduction to version control"](https://coderefinery.github.io/git-intro/) with focus on working online with GitHub.
 :::
 
 It is normal that it may be overwhelming. Take it as a starting point and come back when you want to try something new. You may not have use for these tools yourself, but good to know anyway to potentially forward researchers.
 
 - Version control is the practice of **tracking and managing changes over time**.
 - You can think of version control like regularly taking a photo ("snapshot") of your work.
+
+## Why is version control relevant for data stewards?
+
+You may not write code yourself, but as a data steward, you may:
+
+*   Review research software or repositories linked in a data management plan
+*   Advise on reproducibility and transparency
+*   Help researchers choose appropriate platforms
+*   Interpret repository structure, history, and licensing  
+
+This lesson gives you the *vocabulary and mental model* needed for those tasks.
 
 
 ## Why do we need to keep track of versions?
@@ -31,6 +42,8 @@ of them?):
 - "Found a bug! Since when was it there?"
 - "I am sure it used to work. When did it change?"
 - "My laptop is gone. Is my thesis now gone?"
+
+
 
 
 ## Features: roll-back, branching, merging, collaboration
@@ -97,7 +110,7 @@ Locally, a Git repository is the .git/ folder inside a project. This repository 
 
 :::{exercise}
 
-Let's browse the [numpy repository on GitHub](xx).
+Let's browse the [numpy repository on GitHub](https://github.com/numpy/numpy).
 
 Numpy is a popular Python package used in almost all research code. It has a large community of contributors.
 
@@ -107,6 +120,11 @@ Numpy is a popular Python package used in almost all research code. It has a lar
 4. History
 5. Commits
 6. Clone
+
+Consider:
+* What signals project maturity?
+* Where would you look for licensing or contribution rules?
+* How easy would this be to cite or reuse?
 
 :::
 
@@ -137,7 +155,7 @@ Cloning also includes the history and is therefore preferred over "pure" downloa
 
 Git is a tool/format for version control. It can be used via the terminal or be inbuilt to integrated development environments (IDE) like VSCode, RStudio, Jupyter. Alternative tools are for example [Subversion](https://subversion.apache.org),[Mercurial](https://www.mercurial-scm.org), or [Pijul](https://pijul.org/).
 
-GitHub is a hosting service for Git repositories with web interface. It is one place to **find the source** of software, webpages, presentations, books, games, and a **place to collaborate** and share.  Alternative services for example [GitLab](xx) and [Codeberg](xx).
+GitHub is a hosting service for Git repositories with web interface. It is one place to **find the source** of software, webpages, presentations, books, games, and a **place to collaborate** and share.  Alternative services for example [GitLab](https://about.gitlab.com/) and [Codeberg](https://codeberg.org/).
 
 ## What we typically like to version control (/"track")
 
@@ -193,15 +211,57 @@ Let's create our first online repository! We pretend to be a researcher writing 
 3. Save the file (somewhere) on your computer, call it `random.txt`.
 4. Now we open [github.com](https://github.com) and log in.
 5. To deposit our text file, we first need to **create a repository**.
-5.1 TODO: Screenshot of github with highlighted "create repo"
-5.2 TODO: Screenshot with create repo interface, explain form
-5.3 TODO: Screenshot of empty repo page, explain what is there, link to numpy repo
-6. Upload your text file created earlier
-6.1 TODO: Screenshot of where to click to upload
-6.2 TODO: Screenshot of upload form, explain, link "main" to branches mentioned earlier
+5.1 Click the plus button top right of the github page > New repository.
 
-You now have created your own repository and added a file! You can explore the history (TODO: screenshot) to observe your progress :)
-The link to your repository is your post-day4 assignment which needs to be submitted via moodle.
+:::{figure} img/github-create-repo.png
+:alt: Screen-shot of the create repository interface on GitHub, described below
+:width: 100%
+:class: with-border
+
+The "create repository" interface on GitHub.
+:::
+
+5.2 In the form: 
+  - set your own username as the owner
+  - choose a repository name, needs to be unique for your namespace 
+  - Add a short description of what this repository is for
+  - Choose if you would like the repository to be public or private. If you can, always choose public, though you can also change later.
+  - We will not be using any template, though they can be super useful for similar projects
+  - We want to add a README, so let's turn that switch to **on**.
+  - We do not need a .gitignore at this point. This is important when you work locally and want to exclude some of your local files from being tracked
+  - And it is good practice to right away add a license, e.g. CC0, Creative Commons Zero. 
+  - Then click **create repository**.
+
+We have now created an empty repository! 
+
+:::{figure} img/github-empty-repo.png
+:alt: Screen-shot of the an empty repository on GitHub, described below
+:width: 100%
+:class: with-border
+
+An empty repository after creation.
+:::
+
+6. Now upload your text file, that we created earlier
+
+- Find the plus ("add file") button next to the bigger green "code" button in your repository
+- Click "upload files"
+
+:::{figure} img/github-upload-file.png
+:alt: Screen-shot of the add file button
+:width: 100%
+:class: with-border
+
+Adding a file to the repository on GitHub.
+:::
+- After drag and dropping or finding your file  from your computer, we need to commit it to the repository
+- For that write a short commit message that tells why you added the file. You can, but don't have to add an extended description
+- We choose "commit directly to the main branch"
+- And "commit changes"
+
+
+You now have created your own repository and added a file! You can explore the history to observe your progress :)
+The link to your repository is your post-day 4 assignment which needs to be submitted via moodle.
 
 :::
 
@@ -262,6 +322,17 @@ When you get back to it later: Instead of clone, you git pull: Get latest versio
 See also next lesson.
 
 :::
+
+
+## Is putting your code on GitHub making it FAIR?
+
+Code on GitHub is not FAIR by default (not persistent), however, it:
+*   Enables transparency
+*   Supports repeatability
+*   Helps track provenance
+
+-> GitHub is often *part* of a FAIR ecosystem, not the whole solution.
+
 
 ```{keypoints}
 - git is a popular version control tool, often used together with GitHub, an online hosting platform

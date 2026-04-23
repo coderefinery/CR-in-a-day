@@ -6,12 +6,16 @@
 :::
 
 :::{info}
-This materials is adoopted from CodeRefinery lesson XX
+This materials is adopted from CodeRefinery lesson [Collaborative git](https://coderefinery.github.io/git-collaborative/).
 :::
+
 
 ## Collaboration on textfiles
 
-XX
+Nowadays there are many options to collaborate on text files:
+
+Real-time collaboration with tools like Google Docs / Microsoft Sharepoint Word, HackMD / HedgeDoc (markdown), Overleaf (LaTeX), Typst etc.
+This works fine for texts, though it can get really fast really messy with code: Even though you want to only add/change one thing, you may have to edit multiple places in scripts/multiple files.
 
 
 ## Cloning a repository
@@ -61,7 +65,7 @@ A demo with forking a famous repository.
 
 This exercise is the typical case where you find something that could be improved in a repository and you suggest a change. Compared to other scenarios (like a wiki) you do not need to have permissions to suggest a change. Furthermore, **your change will not overwrite anything done by others**, until the change is **reviewed and approved**.
 
-You can check terminology in our [quick reference](xx). 
+You can check terminology in our [quick reference](./quick-reference.md).
 
 :::{exercise} Exercise: Add a new recipe to somebody else's cookbook
 
@@ -154,86 +158,3 @@ After the update my "branch is up to date" with the upstream repository:
 - You can now contribute to any project you can view!
 ```
 
-# Making a suggestion 
-
-<br>
-
-Full workflow **GitHub**:
-
-1. Suggest idea: issue
-2. Discussion -> OK
-3. Separate your work: branch / fork
-4. Work: work - commit (one or more) 
-6. Suggest work: pull request 
-7. Accept: merge
-
-➡ You made it to history!
-
-???
-
-This is the workflow for any repo you find on GitHub
-
----
-
-# (Optional) Making a suggestion 
-
-<br>
-
-Full workflow **local**:
-
-1. Suggest idea: issue
-2. Discussion -> OK
-3. Get the work: (fork) - clone - pull 
-4. Work: work - add - commit (one or more) 
-5. Put it on GitHub: push 
-6. Suggest work: pull request 
-7. Accept: merge
-
-➡ You made it to history!
-
----
-
-# (Optional) Demo - exploring an existing repo 
-
-Just watch :)
-
-<br>
-<br>
-
-- History
-- Branches
-- Forks
-- Issues
-- Pull requests
-
-<br>
-
-➡ <https://github.com/the-turing-way/the-turing-way/>
-
----
-
-# Demo - contribute
-
-You may suggest your own recipes!
-
-<br>
-
-- History
-- Issue
-- Fork / Branch
-- Work
-- Pull request
-
-New file vs changing file
-
-<br>
-
-➡ <https://github.com/samumantha/data_support_recipe_book>
-
-???
-
-Commit history: 
-- Who?
-- What?
-- Why? -> Commit message!
-- When?

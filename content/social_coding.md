@@ -6,8 +6,20 @@
 ```
 
 :::{info}
-This materials is adoopted from CodeRefinery lesson [Social Coding](xx)
+This materials is adoopted from CodeRefinery lesson [Social Coding](https://coderefinery.github.io/social-coding/).
+This is not legal advice! Please always consult your organizations legal team when in doubt.
 :::
+
+## Relevance for data stewards
+
+You may not be writing or releasing software yourself, but you are often asked to:
+
+* Advise on licensing choices
+* Interpret reuse conditions
+* Assess whether software outputs can be shared
+* Help make software citable and compliant with policy.
+
+Social coding is as much about **people, rules, and expectations** as it is about tools.
 
 ## Comparing sharing papers and sharing code
 
@@ -53,6 +65,8 @@ From [Nature editorial policy](https://www.nature.com/authors/policies/availabil
 > materials or information must be disclosed to the editors at the time of
 > submission. Any restrictions must also be disclosed in the submitted
 > manuscript."
+
+These policies may surface during data stewardship consultations, not just at submission time.
 
 However [a study](https://www.pnas.org/content/115/11/2584) showed that despite
 these policies, many people still do not share their code 😞.  This paper
@@ -166,7 +180,7 @@ Comments:
 - Proprietary/custom: Derivative work typically not possible (no arrow goes from proprietary to open)
 - Permissive: Derivative work does not have to be shared
 - Copyleft/reciprocal: Derivative work must be made available under the same license terms
-- NC (non-commercial) and ND (non-derivative) exist for data licenses but not really for software licenses
+- NC (non-commercial) and ND (non-derivative) exist for data licenses but not really for software licenses 
 
 **Great resource for comparing software licenses**: [Joinup Licensing Assistant](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-find-and-compare-software-licenses)
 - Provides comments on licenses
@@ -174,7 +188,11 @@ Comments:
 - [Joinup Licensing Assistant - Compatibility Checker](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-compatibility-checker)
 - Not biased by some company agenda
 
-TODO: github makes it easy, use standard license 
+As we do here, data stewards should be careful not to give legal advice, but can:
+
+* Explain common licenses
+* Highlight compatibility issues
+* Point researchers to institutional or legal support when needed.
 
 
 ## Software citation
@@ -248,6 +266,8 @@ More about `CITATION.cff` files:
 - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 - [Web form to create, edit, and validate CITATION.cff files](https://citation-file-format.github.io/cff-initializer-javascript/)
 - [Video: "How to create a CITATION.cff using cffinit"](https://www.youtube.com/watch?v=zcgLIT5Qd4M)
+
+
 
 
 ### Papers with focus on scientific software

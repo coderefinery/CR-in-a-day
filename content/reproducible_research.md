@@ -7,7 +7,7 @@
 :::
 
 :::{info}
-This materials is adoopted from CodeRefinery lesson [Reproducible research](xx)
+This materials is adoopted from CodeRefinery lesson [Reproducible research](https://coderefinery.github.io/reproducible-research/)
 :::
 
 ## Intro
@@ -16,27 +16,34 @@ This materials is adoopted from CodeRefinery lesson [Reproducible research](xx)
 ---
 
 ```{figure} /img/reproducible-research.jpg
-:alt: "Quick steps to reproducible research. XX "
+:alt: "Quick steps to reproducible research. "
 :width: 100%
 ```
 
 [Picture by Heidi Seibold]
 
-The CodeRefinery workshop touches upon all these topics. Here we only have time to take a brief look at some of the steps
+The CodeRefinery workshop touches upon all these topics. Here we only have time to take a brief look at some of the steps.
 
 ## Small steps towards reproducible research 
 
-TODO: Rewrite from data steward perspective
 
 If this is all new to you, it may feel quite overwhelming. 
 
-**Our recommendation:** Don't worry! Focus on "good enough" instead of perfect. 
+**Our recommendation:** Don't worry! Focus on "good enough" understanding to continue reading up on the topics. 
 
-To start, pick one topic that seems reasonable to implement for your current project. Something that helps YOU right now. This may be something you may have to implement due to requirements from your funders or the journal where you want to publish your research. Use their requirements as a checklist and find tools that feel comfortable for you. 
+As a data steward you may never *implement* all of these practices yourself.  
+But your role may be to:
 
-A great way to see what are the really important things to implement is to meet with a colleague, exchange codes and try to run each others code. Every question your colleague has to ask from you about your code gives a hint on where you may need to improve. 
+* Recognize reproducibility risks
+* Ask the right questions
+* Point researchers to appropriate tools
+* Interpret what “sufficient” reproducibility looks like in different contexts
 
-Keeping a "log book" while working on your own code also serves as a great basis for making your code more reproducible. Can you use any of the tools and techniques learned in this workshop to share parts of your log book with others to help them run your code?
+We generally recommend researchers to start by picking one topic that seems reasonable to implement for their current project. Something that helps THEM right now. This may be something they may have to implement due to requirements from funders or the journal where they want to publish your research. Their requirements can be used as a checklist and find tools that feel comfortable for them. 
+
+A great way to see what are the really important things to implement is to meet with a colleague, exchange codes and try to run each others code. Every question the colleague has to ask about the code gives a hint on where things may need to improve. 
+
+Keeping a "log book" while working on code also serves as a great basis for making code more reproducible. 
 
 # Motivation
 
@@ -69,17 +76,15 @@ domains of science:
 :width: 100%
 ```
 
-This study is now few years old but the highlighted problem did not get
+This study is now some years old but the highlighted problem did not get
 smaller.
-
-TODO: Link to newer papers?
 
 ---
 
 ## Levels of reproducibility
 
 A published article is like the top of a pyramid. It rests on multiple
-levels, each contributing to its reproducibility.
+levels, each contributing to its reproducibility. Data stewards often work on the *lower layers* of this pyramid, where small improvements can have large impact.
 
 ```{figure} img/repro-pyramid.png
 :alt: Reproducibility pyramid
@@ -89,18 +94,18 @@ levels, each contributing to its reproducibility.
 [Steeves, Vicky (2017) in "Reproducibility Librarianship," Collaborative Librarianship: Vol. 9: Iss. 2, Article 4.
 Available at: https://digitalcommons.du.edu/collaborativelibrarianship/vol9/iss2/4]
 
-This also means that you can think about it from the beginning of your research life cycle!
+This also means that it is important to think about it from the beginning of the research life cycle!
 
 
 ## Discussion: Reading assignment
 
 :::{discussion}
 
-In small groups, discuss the reading assignment for today (TODO: link)
+In small groups, discuss the reading assignment for today - [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
 
-1. What may be barriers to implementation?
-2. What could motivate researchers to care about implementation?
-3. How can we support researchers with the implementation? 
+1. What may be barriers to implementation these practices?
+2. What could motivate researchers to care about their implementation?
+3. How can we support researchers with the implementation?
 Bonus: Do you know any good tutorials for any of the topics?
 
 Report back in the collaborative notes.
@@ -111,6 +116,7 @@ Report back in the collaborative notes.
 
 
 One of the first steps to make your work reproducible is to organize your projects well.
+A good directory structure is one that makes sense to someone **who has never seen the project before**.
 Let's go over some of the basic things which people have found to work (and not to work).
 
 
@@ -376,6 +382,8 @@ blindly. Apply the same caution as when installing software packages from untrus
 package repositories.
 ```
 
+Containers solve many problems, but they also raise questions about long-term maintenance, trust, and governance - areas where **data stewards play an important role**.
+
 ---
 
 ## Where can one share or find images?
@@ -386,6 +394,13 @@ package repositories.
 - [GitLab Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/)
 - GitHub/GitLab release artifacts
 - [Zenodo](https://zenodo.org/)
+
+
+:::{info}
+
+You don’t need to master these tools - but you should be able to recognize when it would help.
+
+:::
 
 
 ---
