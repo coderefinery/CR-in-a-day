@@ -57,7 +57,7 @@ same time.**
   - Different people can work on the same code/project without interfering
   - You can experiment with an idea and discard it if it turns out to be a bad idea
 
-:::{figure} img/gopher/gophers.png
+:::{figure} img/gophers.png
 :alt: Branching explained with a gopher
 :width: 100%
 
@@ -197,7 +197,7 @@ For collaboration in the Nordics we have the [Nordic GitLab hosted by DeIC](http
 
 ## Exercise: Our first repository
 
-:::{exercise}
+::::{exercise}
 
 Let's create our first online repository! We pretend to be a researcher writing some code on their own computer who now wants to collaborate with others and use GitHub for it. This is a beginner scenario, avoiding separate tools and use of command line. See below for workflow when using Git(Hub) more than once in a while.
 
@@ -258,7 +258,7 @@ Adding a file to the repository on GitHub.
 You now have created your own repository and added a file! You can explore the history to observe your progress :)
 The link to your repository is your post-day 4 assignment which needs to be submitted via moodle.
 
-:::
+::::
 
 ## Exercise: Editing files online
 

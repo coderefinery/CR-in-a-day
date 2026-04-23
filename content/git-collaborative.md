@@ -96,7 +96,7 @@ We work with this [recipe book repository](https://github.com/eglerean/data-stew
 Navigate to your fork and notice how GitHub tells you that your fork is behind.
 In my case, it is 9 commits behind upstream. To fix this, click on "Sync fork"
 and then "Update branch":
-:::{figure} himg/sync-fork.png
+:::{figure} img/sync-fork.png
 :width: 80%
 :class: with-border
 :alt: Screenshot on GitHub fork page showing that the fork is behind

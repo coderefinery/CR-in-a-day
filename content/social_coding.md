@@ -228,12 +228,12 @@ Is it enough to make the code public for the code to remain **findable and acces
 
 **Checklist for making a release of your software citable**:
 
-- {octicon}`check` Assigned an appropriate license
-- {octicon}`check` Described the software using an appropriate metadata format
-- {octicon}`check` Clear version number
-- {octicon}`check` Authors credited
-- {octicon}`check` Procured a persistent identifier
-- {octicon}`check` Added a recommended citation to the software documentation
+- Assigned an appropriate license
+- Described the software using an appropriate metadata format
+- Clear version number
+- Authors credited
+- Procured a persistent identifier
+- Added a recommended citation to the software documentation
 
 This checklist is adapted from: N. P. Chue Hong, A. Allen, A. Gonzalez-Beltran,
 et al., Software Citation Checklist for Developers (Version 0.9.0). Zenodo.

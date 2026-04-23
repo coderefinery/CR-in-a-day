@@ -55,7 +55,7 @@ There are great resources to self-evaluate the *FAIRness* of your research softw
 :delim: ;
 :widths: auto
 
-9:15-09:25 ; Welcome, notes, icebreaker and [setup](xx)
+9:15-09:25 ; Welcome, notes, icebreaker and setup
 9:25-9:30 ; Intro (this page)
 9:30-9:40 ; Motivation for version control, terminology
 9:40-10:20 ; Exercise type along

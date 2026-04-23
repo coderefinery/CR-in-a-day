@@ -229,14 +229,14 @@ From [xkcd - dependency](https://xkcd.com/2347/). Another image that might be fa
 - Data <-> ingredients
 - Libraries <-> pots/tools
 
-```{figure} img/kitchen/recipe.png
+```{figure} img/recipe.png
 :alt: Cooking recipe in an unfamiliar language
 :width: 50%
 
 Cooking recipe in an unfamiliar language [Midjourney, CC-BY-NC 4.0]
 ```
 
-```{figure} img/kitchen/libraries.png
+```{figure} img/libraries.png
 :alt: Kitchen with few open cooking books
 :width: 50%
 
