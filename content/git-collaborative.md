@@ -5,9 +5,8 @@
 - Being able to suggest changes to repositories you do not own
 :::
 
-:::{info}
-This materials is adopted from CodeRefinery lesson [Collaborative git](https://coderefinery.github.io/git-collaborative/).
-:::
+
+These materials are adopted from CodeRefinery lesson [Collaborative git](https://coderefinery.github.io/git-collaborative/).
 
 
 ## Collaboration on textfiles

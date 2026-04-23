@@ -5,11 +5,9 @@
 - Utilize the basic features of git on GitHub
 :::
 
-:::{info}
-This materials is adopted from CodeRefinery lesson ["Introduction to version control"](https://coderefinery.github.io/git-intro/) with focus on working online with GitHub.
-:::
+These materials is adopted from CodeRefinery lesson ["Introduction to version control"](https://coderefinery.github.io/git-intro/) with focus on working online with GitHub.
 
-It is normal that it may be overwhelming. Take it as a starting point and come back when you want to try something new. You may not have use for these tools yourself, but good to know anyway to potentially forward researchers.
+It is normal, that all the new terms and concepts may be overwhelming. Take it as a starting point, and come back when you want to try something new. You may not have use for these tools yourself, but good to know anyway to potentially forward researchers.
 
 - Version control is the practice of **tracking and managing changes over time**.
 - You can think of version control like regularly taking a photo ("snapshot") of your work.
@@ -42,9 +40,6 @@ of them?):
 - "Found a bug! Since when was it there?"
 - "I am sure it used to work. When did it change?"
 - "My laptop is gone. Is my thesis now gone?"
-
-
-
 
 ## Features: roll-back, branching, merging, collaboration
 
@@ -278,7 +273,6 @@ Let's now use the GitHub web interface to edit a file that is already there. Thi
 
 :::
 
-:::{info}
 
 ## Scenarios for working with GitHub by yourself
 
@@ -320,19 +314,6 @@ Working on GitHub can be useful for small edits, like fixing a typo or changes t
 When you get back to it later: Instead of clone, you git pull: Get latest version from GitHub
 
 See also next lesson.
-
-:::
-
-
-## Is putting your code on GitHub making it FAIR?
-
-Code on GitHub is not FAIR by default (not persistent), however, it:
-*   Enables transparency
-*   Supports repeatability
-*   Helps track provenance
-
--> GitHub is often *part* of a FAIR ecosystem, not the whole solution.
-
 
 ```{keypoints}
 - git is a popular version control tool, often used together with GitHub, an online hosting platform

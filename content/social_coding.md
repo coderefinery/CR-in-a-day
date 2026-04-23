@@ -5,10 +5,10 @@
 - Practical advice for software licensing.
 ```
 
-:::{info}
-This materials is adoopted from CodeRefinery lesson [Social Coding](https://coderefinery.github.io/social-coding/).
+
+These materials are adopted from CodeRefinery lesson [Social Coding](https://coderefinery.github.io/social-coding/).
 This is not legal advice! Please always consult your organizations legal team when in doubt.
-:::
+
 
 ## Relevance for data stewards
 
@@ -266,8 +266,6 @@ More about `CITATION.cff` files:
 - [GitHub now supports CITATION.cff files](https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files)
 - [Web form to create, edit, and validate CITATION.cff files](https://citation-file-format.github.io/cff-initializer-javascript/)
 - [Video: "How to create a CITATION.cff using cffinit"](https://www.youtube.com/watch?v=zcgLIT5Qd4M)
-
-
 
 
 ### Papers with focus on scientific software
