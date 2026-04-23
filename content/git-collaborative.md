@@ -2,22 +2,19 @@
 
 :::{objectives}
 - Understanding the distributed nature of git collaborations
-- Learning about the key terms
 - Being able to suggest changes to repositories you do not own
 :::
 
 
-## Terminology: Commits, branches, repositories, forks, clones
+These materials are adopted from CodeRefinery lesson [Collaborative git](https://coderefinery.github.io/git-collaborative/).
 
-- [repository](https://coderefinery.github.io/git-intro/reference/#term-repository): The project, contains all data and history (commits, branches, tags).
-- [commit](https://coderefinery.github.io/git-intro/reference/#commit): Snapshot of the project, gets a unique identifier (e.g. `c7f0e8bfc718be04525847fc7ac237f470add76e`).
-- [branch](https://coderefinery.github.io/git-intro/reference/#branch): Independent development line. The main development line is often called `main`. Technically, a branch in Git
-  is implemented as a pointer to a commit (imagine a sticky note with a branch name on it).
-- [tag](https://coderefinery.github.io/git-intro/reference/#tag): A pointer to one commit, to be able to refer to it later. Like a [commemorative plaque](https://en.wikipedia.org/wiki/Commemorative_plaque)
-  that you attach to a particular commit (e.g. `phd-printed` or `paper-submitted`).
-- [cloning <clone>](https://coderefinery.github.io/git-intro/reference/#cloning): Copying the whole repository to your laptop - the first time. It is not necessary to download each file one by one.
-- [forking <fork>](https://coderefinery.github.io/git-intro/reference/#forking): Taking a copy of a repository (which is typically not yours) - your
-  copy (fork) stays on GitHub/GitLab and you can make changes to your copy.
+
+## Collaboration on textfiles
+
+Nowadays there are many options to collaborate on text files:
+
+Real-time collaboration with tools like Google Docs / Microsoft Sharepoint Word, HackMD / HedgeDoc (markdown), Overleaf (LaTeX), Typst etc.
+This works fine for texts, though it can get really fast really messy with code: Even though you want to only add/change one thing, you may have to edit multiple places in scripts/multiple files.
 
 
 ## Cloning a repository
@@ -38,7 +35,7 @@ in a few different situations:
   releases of new versions of the code.
 
 
-:::{figure} https://coderefinery.github.io/git-collaborative/_images/forkandclone.png
+:::{figure} img/forkandclone.png
 :alt: Forking and cloning
 :width: 100%
 :class: with-border
@@ -67,6 +64,8 @@ A demo with forking a famous repository.
 
 This exercise is the typical case where you find something that could be improved in a repository and you suggest a change. Compared to other scenarios (like a wiki) you do not need to have permissions to suggest a change. Furthermore, **your change will not overwrite anything done by others**, until the change is **reviewed and approved**.
 
+You can check terminology in our [quick reference](./quick-reference.md).
+
 :::{exercise} Exercise: Add a new recipe to somebody else's cookbook
 
 We work with this [recipe book repository](https://github.com/eglerean/data-stewards-recipe-book). This will be the **upstream** repository.
@@ -84,69 +83,34 @@ We work with this [recipe book repository](https://github.com/eglerean/data-stew
 1. You can now open a pull request towards the upstream repository by clicking the green button **Create pull request**
 1. In the page "Open a pull request" you will asked to give a title and explain what you did. Make sure you add "Closes #N" in the text, with `N` being the number of the issue you opened to explain what you were going to do. When ready, click the green button "**Create pull request**"
 1. The project owner will merge the pull requests OR will ask for changes.
-1. (Optional) After few pull requests are merged, yuo can update your fork with the changes from others.
+1. (Optional) After few pull requests are merged, you can update your fork with the changes from others.
 1. (Optional) Check that in your fork you can see changes from other people's pull requests.
 1. (Optional) In step 4, you could have also edited a file instead of adding a new file. You can look for typos and suggest improvements.
 :::
 
 
+:::admonition
 
-## Advanced topics
+## How to update your fork with changes from upstream
 
-### Pull requests can be coupled with automated testing
-
-We added an automated test here just for fun and so that you see that this is
-possible to do.
-
-In this exercise, the test is silly. It will check whether the recipe contains
-both an ingredients and an instructions section.
-
-In this example the test failed:
-:::{figure} https://coderefinery.github.io/git-collaborative/_images/all-checks-failed.png
-:width: 60%
-:class: with-border
-:alt: Screenshot of a failed test in a pull request
-::::
-
-Click on the "Details" link to see the details of the failed test:
-:::{figure} https://coderefinery.github.io/git-collaborative/_images/check-details.png
-:width: 60%
-:class: with-border
-:alt: Screenshot of details why the test failed
-::::
-
-**How can this be useful?**
-- The project can define what kind of tests are expected to pass before a pull
-  request can be merged.
-- The reviewer can see the results of the tests, without having to run them
-  locally.
-
-**How does it work?**
-- We added a GitHub Actions workflow
-  to automatically run on each push or pull request towards the `main` branch.
-
-What tests or steps can you image for your project to run automatically with
-each pull request?
-
-
-### How to update your fork with changes from upstream
-
-This used to be difficult but now it is two mouse clicks:
 Navigate to your fork and notice how GitHub tells you that your fork is behind.
 In my case, it is 9 commits behind upstream. To fix this, click on "Sync fork"
 and then "Update branch":
-:::{figure} https://coderefinery.github.io/git-collaborative/_images/sync-fork.png
+:::{figure} img/sync-fork.png
 :width: 80%
 :class: with-border
 :alt: Screenshot on GitHub fork page showing that the fork is behind
 ::::
 
 After the update my "branch is up to date" with the upstream repository:
-:::{figure} https://coderefinery.github.io/git-collaborative/_images/fork-after-update.png
+:::{figure} img/fork-after-update.png
 :width: 80%
 :class: with-border
 :alt: Screenshot on GitHub after fork has been updated
 ::::
+
+:::
+
 
 
 ### How to approach other people’s repositories with ideas, changes, and requests
@@ -186,9 +150,10 @@ After the update my "branch is up to date" with the upstream repository:
 :::
 
 
-## Summary
-
+```{keypoints}
 - This forking workflow lets you propose changes to repositories for
   which **you have no write access**.
 - This is the way that much modern open-source software works.
 - You can now contribute to any project you can view!
+```
+

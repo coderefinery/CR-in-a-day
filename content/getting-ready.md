@@ -1,5 +1,11 @@
 # Getting ready for this course 
 
+## Get to know a texteditor of your choice
+
+Every computer likely has some basic text editor installed. Windows (Notepad/Muistio), Mac (editor), Linux (gedit) or something along those lines. 
+There also exist various command line editors, like nano, vim and emacs. The choice is up to you, the only important thing is that you can save a plain text file (e.g. `.txt` extension) with it. Also other tools like Word, LibreOffice, Google docs can do this. Though we recommend to get familiar with something simpler.
+For now it is enough to know how to open your editor of choice, edit a file and save it with `.txt` extension.
+
 ## GitHub account
 
 In this course, we use the public GitHub service and you need an
@@ -26,7 +32,7 @@ hosting services but this is work in progress.
 GitHub may require you to enable multi-factor authentication
 (MFA). This is generally a good thing, but may take some time to set
 up. Luckily, you probably don't have to do this immediately. If you
-are prompted to enable MFA before the end of CodeRefinery, follow
+are prompted to enable MFA before the end of the course, follow
 GitHub's instructions since they are usually pretty good.
 
 
