@@ -6,14 +6,12 @@
 - Understand what dependency management tools, workflow tools and containers are and can be useful for
 :::
 
-:::{info}
-This materials is adoopted from CodeRefinery lesson [Reproducible research](https://coderefinery.github.io/reproducible-research/)
-:::
 
-## Intro
+These materials are adopted from CodeRefinery lesson [Reproducible research](https://coderefinery.github.io/reproducible-research/).
 
 
----
+## Introduction
+
 
 ```{figure} /img/reproducible-research.jpg
 :alt: "Quick steps to reproducible research. "
@@ -45,7 +43,7 @@ A great way to see what are the really important things to implement is to meet 
 
 Keeping a "log book" while working on code also serves as a great basis for making code more reproducible. 
 
-# Motivation
+## Motivation
 
 
 ```{figure} img/research_comic_phd.gif
@@ -271,8 +269,27 @@ more reproducible it is.
 
 ## Workflow tools
 
+## Several steps from input data to result
 
-Example (for one book only):
+*The following material is partly derived from a [HPC Carpentry lesson](https://hpc-carpentry.github.io/hpc-python/).*
+
+In this episode, we will use an [example
+project](https://github.com/coderefinery/word-count) which finds most frequent
+words in books and plots the result from those statistics.  In this example we
+wish to:
+
+1. Analyze word frequencies using [code/count.py](https://github.com/coderefinery/word-count/blob/main/code/count.py)
+   for 4 books
+   (they are all in the [data](https://github.com/coderefinery/word-count/tree/main/data) directory).
+2. Plot a histogram using [plot/plot.py](https://github.com/coderefinery/word-count/blob/main/plot/plot.py).
+
+```{figure} img/arrows.png
+:alt: From book to word counts to plot
+:width: 100%
+```
+
+
+Example code call (for one book only):
 
 ```console
 $ python code/count.py data/isles.txt > statistics/isles.data
@@ -314,7 +331,7 @@ Tools like Snakemake help us with **reproducibility** by supporting us with **au
 
 ## Containers
 
-## What is a container?
+### What is a container?
 
 Imagine if you didn't have to install things yourself, but instead you could
 get a computer with the exact software for a task pre-installed. Containers
@@ -336,7 +353,7 @@ From [reddit](https://www.reddit.com/r/ProgrammerHumor/comments/cw58z7/it_works_
 - Containers <-> a real connected kitchen
 ``````
 
-## From definition files to container images to containers
+### From definition files to container images to containers
 
 - Containers can be built to bundle _all the necessary ingredients_ (data, code, environment, operating system).
 - A container image is like a piece of paper with all the operating system on it. When you run it,
@@ -346,13 +363,13 @@ From [reddit](https://www.reddit.com/r/ProgrammerHumor/comments/cw58z7/it_works_
 - Definition files (e.g., Dockerfile or Singularity definition file) are text
   files that contain a series of instructions to build container images.
 
-## You may have use for containers in different ways
+### You may have use for containers in different ways
 
 - **Installing a certain software is tricky**, or not supported for your operating system? - Check if an image is available and run the software from a container instead!
 - You want to make sure your colleagues are using the **same environment** for running your code? - Provide them an image of your container!
   - If this does not work, because they are using a different architecture than you do? - Provide a definition file for them to **build the image suitable for their computers**. This does not create the exact environment you have, but in most cases a similar enough one.
 
-## Pros and cons of containers
+### Pros and cons of containers
 
 Containers are popular for a reason - they solve a number of
 important problems:
@@ -386,7 +403,7 @@ Containers solve many problems, but they also raise questions about long-term ma
 
 ---
 
-## Where can one share or find images?
+### Where can one share or find images?
 
 - [Docker Hub](https://hub.docker.com/)
 - [Quay](https://quay.io/)
@@ -396,16 +413,10 @@ Containers solve many problems, but they also raise questions about long-term ma
 - [Zenodo](https://zenodo.org/)
 
 
-:::{info}
-
-You don’t need to master these tools - but you should be able to recognize when it would help.
-
-:::
-
-
 ---
 
 ```{keypoints}
+- You don’t need to master these tools - but you should be able to recognize when it would help.
 - Without reproducibility in scientific computing, everyone would have to start a new project / code from scratch.
 - Containers can be helpful if complex setups are needed to run a specific software.
 - They can also be helpful for prototyping without "messing up" your own computing environment, or for running software that requires a different operating system than your own.
