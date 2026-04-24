@@ -1,13 +1,11 @@
 # Using git to collaborate 
 
 :::{objectives}
-- Understanding the distributed nature of git collaborations
-- Being able to suggest changes to repositories you do not own
+- Explain how collaborative version control works in general.
+- Apply basic GitHub collaboration workflows using issues and pull requests.
 :::
 
-
 These materials are adopted from CodeRefinery lesson [Collaborative git](https://coderefinery.github.io/git-collaborative/).
-
 
 ## Collaboration on textfiles
 
@@ -93,6 +91,8 @@ We work with this [recipe book repository](https://github.com/eglerean/data-stew
 
 ## How to update your fork with changes from upstream
 
+>  Upstream: The original repository that a fork was created from; often used to pull in updates from the main project.
+
 Navigate to your fork and notice how GitHub tells you that your fork is behind.
 In my case, it is 9 commits behind upstream. To fix this, click on "Sync fork"
 and then "Update branch":
@@ -110,8 +110,6 @@ After the update my "branch is up to date" with the upstream repository:
 ::::
 
 :::
-
-
 
 ### How to approach other people’s repositories with ideas, changes, and requests
 
@@ -151,9 +149,8 @@ After the update my "branch is up to date" with the upstream repository:
 
 
 ```{keypoints}
-- This forking workflow lets you propose changes to repositories for
-  which **you have no write access**.
-- This is the way that much modern open-source software works.
+- Collaborative Git workflows support shared stewardship by enabling multiple contributors to work safely on the same files.
+- Via Github we can synchronize work across people and systems while preserving full change history and attribution.
 - You can now contribute to any project you can view!
 ```
 

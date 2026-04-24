@@ -1,9 +1,9 @@
 # Reproducible research
 
 :::{objectives}
-- Understand why computational reproducibility is important
-- Understand how to organize research projects
-- Understand what dependency management tools, workflow tools and containers are and can be useful for
+- Understand why computational reproducibility is important.
+- Get familiar with terminology around computational reproducibility.
+- Understand that there are tools available to support reproducibility.
 :::
 
 
@@ -101,9 +101,9 @@ This also means that it is important to think about it from the beginning of the
 
 In small groups, discuss the reading assignment for today - [Good enough practices in scientific computing](https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510)
 
-1. What may be barriers to implementation these practices?
-2. What could motivate researchers to care about their implementation?
-3. How can we support researchers with the implementation?
+1. What may be barriers to implementation of these practices?
+2. What could motivate researchers to care about reproducibility of their code?
+3. How can we support researchers with the implementation of these practices?
 Bonus: Do you know any good tutorials for any of the topics?
 
 Report back in the collaborative notes.
@@ -201,13 +201,6 @@ To format your notes into a manuscript, you can use Word-like online editors or 
 
 You may also want to consider writing an executable manuscript using tools like [Jupyter Notebooks](https://jupyter.org) hosted on [Binder](https://mybinder.org), [Quarto](https://quarto.org/), [Authorea](https://www.authorea.com) or [Observable](https://observablehq.com/), to name a few.
 
-### Resources on research compendia
-
-- [About research compendia at the Turing Way](https://book.the-turing-way.org/reproducible-research/compendia)
-- ["Research compendia"](http://inundata.org/talks/rstd19/#/): a set of good practices for reproducible data analysis in R, but much is transferable to other languages.
-- [rrtools](https://github.com/benmarwick/rrtools): instructions, templates, and functions for writing a reproducible article or report with R.
-- ...
-
 
 ## Recording dependencies
 
@@ -266,10 +259,11 @@ that you know your dependencies!
 than debugging. The more often you re-create your environment, the
 more reproducible it is.
 
+---
 
 ## Workflow tools
 
-## Several steps from input data to result
+### Several steps from input data to result
 
 *The following material is partly derived from a [HPC Carpentry lesson](https://hpc-carpentry.github.io/hpc-python/).*
 
@@ -287,7 +281,6 @@ wish to:
 :alt: From book to word counts to plot
 :width: 100%
 ```
-
 
 Example code call (for one book only):
 
@@ -313,7 +306,6 @@ This is **imperative style**: we tell the script to run these
 steps in precisely this order, as we would run them manually, one after another.
 
 Sometimes it may be helpful to go from imperative to declarative style. Rather than saying "do this and then that" we describe dependencies between steps, but we let the tool figure out the order of steps to produce results.
-
 
 ### Example workflow tool: [Snakemake](https://snakemake.readthedocs.io/en/stable/index.html)
 
@@ -416,8 +408,8 @@ Containers solve many problems, but they also raise questions about long-term ma
 ---
 
 ```{keypoints}
-- You don’t need to master these tools - but you should be able to recognize when it would help.
+- You don’t need to master these tools, but you should be able to recognize when it would help.
+- Reproducibility is essential for trust and reuse by enabling others to understand, verify, and build upon research outputs.
 - Without reproducibility in scientific computing, everyone would have to start a new project / code from scratch.
-- Containers can be helpful if complex setups are needed to run a specific software.
-- They can also be helpful for prototyping without "messing up" your own computing environment, or for running software that requires a different operating system than your own.
+- Undocumented data, code, and environments and workflows are major reproducibility risks 
 ```

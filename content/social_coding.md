@@ -2,9 +2,8 @@
 
 ```{objectives}
 - Get familiar with terminology around licensing.
-- Practical advice for software licensing.
+- Practical advice for software licensing and citations
 ```
-
 
 These materials are adopted from CodeRefinery lesson [Social Coding](https://coderefinery.github.io/social-coding/).
 This is not legal advice! Please always consult your organizations legal team when in doubt.
@@ -307,5 +306,5 @@ software citation examples):
 ```{keypoints}
 - **You cannot ignore licensing**: default is "no one can make copies or
   derivative works".
-  Make it easy for others to cite your software by providing a citation file.
+- Citation.cff files can make it easier for others to cite software and provide credit.
 ```
