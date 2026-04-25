@@ -1,0 +1,489 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social coding &mdash; CodeRefinery in a day  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=b8b12719"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Wrap up and where to go from here" href="../wrapup/" />
+    <link rel="prev" title="Reproducible research" href="../reproducible_research/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            CodeRefinery in a day
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">The lesson</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting-ready/">Getting ready for this course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git-intro/">Introduction to version control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git-collaborative/">Using git to collaborate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_research/">Reproducible research</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Social coding</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#relevance-for-data-stewards">Relevance for data stewards</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#comparing-sharing-papers-and-sharing-code">Comparing sharing papers and sharing code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#journal-policies-as-motivation-for-sharing">Journal policies as motivation for sharing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#motivation-for-open-source-software">Motivation for open source software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sharing-software-is-also-scary">Sharing software is also scary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#code-reusability-what-contributes-to-reusability">Code reusability: What contributes to reusability?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#how-our-work-connects-to-the-work-of-others">How our work connects to the work of others</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#taxonomy-of-software-licenses">Taxonomy of software licenses</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#software-citation">Software citation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#is-putting-software-on-github-gitlab-publishing">Is putting software on GitHub/GitLab/… publishing?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-make-your-software-citable">How to make your software citable</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#papers-with-focus-on-scientific-software">Papers with focus on scientific software</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-cite-software">How to cite software</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapup/">Wrap up and where to go from here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick-reference/">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/">Instructor’s guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery in a day</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Social coding</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/CR-in-a-day/blob/main/content/social_coding.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="social-coding">
+<h1>Social coding<a class="headerlink" href="#social-coding" title="Link to this heading"></a></h1>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<ul class="simple">
+<li><p>Get familiar with terminology around licensing.</p></li>
+<li><p>Practical advice for software licensing and citations</p></li>
+</ul>
+</div>
+<p>These materials are adopted from CodeRefinery lesson <a class="reference external" href="https://coderefinery.github.io/social-coding/">Social Coding</a>.
+This is not legal advice! Please always consult your organizations legal team when in doubt.</p>
+<section id="relevance-for-data-stewards">
+<h2>Relevance for data stewards<a class="headerlink" href="#relevance-for-data-stewards" title="Link to this heading"></a></h2>
+<p>You may not be writing or releasing software yourself, but you are often asked to:</p>
+<ul class="simple">
+<li><p>Advise on licensing choices</p></li>
+<li><p>Interpret reuse conditions</p></li>
+<li><p>Assess whether software outputs can be shared</p></li>
+<li><p>Help make software citable and compliant with policy.</p></li>
+</ul>
+<p>Social coding is as much about <strong>people, rules, and expectations</strong> as it is about tools.</p>
+</section>
+<section id="comparing-sharing-papers-and-sharing-code">
+<h2>Comparing sharing papers and sharing code<a class="headerlink" href="#comparing-sharing-papers-and-sharing-code" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id1">
+<img alt="Image shows that we are motivated sharing our published papers since we get rewarded with academic credit in form of citations" src="../_images/sharing-papers.jpg" />
+<figcaption>
+<p><span class="caption-text">Citation as one form of academic credit to motivate sharing papers.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Sharing papers and academic credit:</p>
+<ul class="simple">
+<li><p>The goal is maximum visibility and maximum reuse.</p></li>
+<li><p>The more interesting science is done referencing my paper, the better for me.</p></li>
+<li><p>Nobody actively tries to limit the reach of their papers.</p></li>
+</ul>
+<figure class="align-default" id="id2">
+<img alt="Getting improvements back and also getting citations can motivate us to share code" src="../_images/sharing-code.jpg" />
+<figcaption>
+<p><span class="caption-text">Different ways we can benefit from sharing code.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Sharing code:</p>
+<ul class="simple">
+<li><p>“I did all the ground work and they get to do the interesting science?”</p></li>
+<li><p>Sharing code and encouraging <em>derivative work</em> may boost your academic impact.</p></li>
+<li><p>But will your work be visible if it is used two levels deep down?</p></li>
+</ul>
+</section>
+<section id="journal-policies-as-motivation-for-sharing">
+<h2>Journal policies as motivation for sharing<a class="headerlink" href="#journal-policies-as-motivation-for-sharing" title="Link to this heading"></a></h2>
+<p>From <a class="reference external" href="https://www.sciencemag.org/authors/science-journals-editorial-policies">Science editorial policy</a>:</p>
+<blockquote>
+<div><p>“We require that <strong>all computer code used for modeling and/or data analysis</strong>
+that is not commercially available be deposited in a <strong>publicly accessible repository</strong>
+upon publication. In rare exceptional cases where security
+concerns or competing commercial interests pose a conflict, code-sharing
+arrangements that still facilitate reproduction of the work should be
+discussed with your Editor no later than the revision stage.”</p>
+</div></blockquote>
+<p>From <a class="reference external" href="https://www.nature.com/authors/policies/availability.html">Nature editorial policy</a>:</p>
+<blockquote>
+<div><p>“An inherent principle of publication is that others should be able to
+replicate and build upon the authors’ published claims. A condition of
+publication in a Nature Research journal is that authors are required to make
+<strong>materials, data, code, and associated protocols promptly available</strong> to readers
+without undue qualifications. Any restrictions on the availability of
+materials or information must be disclosed to the editors at the time of
+submission. Any restrictions must also be disclosed in the submitted
+manuscript.”</p>
+</div></blockquote>
+<p>These policies may surface during data stewardship consultations, not just at submission time.</p>
+<p>However <a class="reference external" href="https://www.pnas.org/content/115/11/2584">a study</a> showed that despite
+these policies, many people still do not share their code 😞.  This paper
+includes samples of charming author responses such as:</p>
+<blockquote>
+<div><p>“When you approach a PI for the source codes and raw data, you better explain
+who you are, whom you work for, why you need the data and what you are going
+to do with it.”</p>
+</div></blockquote>
+</section>
+<section id="motivation-for-open-source-software">
+<h2>Motivation for open source software<a class="headerlink" href="#motivation-for-open-source-software" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Enable derivative work</p></li>
+<li><p>Do not lock yourself out of own code</p></li>
+<li><p>Attract developers who want to be able to show the coding work on their CVs</p></li>
+<li><p>Tightly regulated domains require open source</p></li>
+<li><p>Open-source software (OSS) can lead to more engagement from industry which may lead to more impact</p></li>
+<li><p>If it’s not open, it is not likely to become standard</p></li>
+</ul>
+</section>
+<section id="sharing-software-is-also-scary">
+<h2>Sharing software is also scary<a class="headerlink" href="#sharing-software-is-also-scary" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Fear of being scooped</strong>:
+A license can avoid it, and you can release when you are ready. Anyway, it is
+very unlikely that others will understand your code and publish before you
+without involving you in a collaboration. Sharing is a form of publishing.</p></li>
+<li><p><strong>Exposes possibly “ugly code”</strong>:
+In practice almost nobody will judge the quality of your code.
+“Software, once written, is never really finished” (N. Asparouhova).</p></li>
+<li><p><strong>Others may find bugs and mistakes</strong>:
+Isn’t this good? Would you not like to use a code which gives people the chance to locate bugs?
+If you don’t release, people will assume there are bugs anyway.</p></li>
+<li><p><strong>Others may require support and ask too many questions</strong>:
+This can become a problem: use tools and community and protect your time.
+You aren’t required to support anyone. You can also “archive” a repository to disable
+most forms of interaction (issues, PRs). Also a note in README on support level helps.</p></li>
+<li><p><strong>Fear of losing control over the direction of the project</strong>:
+Open source does not mean everybody can change <strong>your version</strong>.</p></li>
+<li><p><strong>“Bad” derivative projects may appear</strong>:
+It will be clear which is the official version.</p></li>
+</ul>
+</section>
+<section id="code-reusability-what-contributes-to-reusability">
+<h2>Code reusability: What contributes to reusability?<a class="headerlink" href="#code-reusability-what-contributes-to-reusability" title="Link to this heading"></a></h2>
+<p>What contributes to you being able to reuse stuff that others make, and others
+(or you) being able to reuse your stuff?  When you find a repository with code
+you would like to reuse, you may look at the following things to determine its
+reusability:</p>
+<ul class="simple">
+<li><p><strong>Date of last code change</strong>: Is the project abandoned?</p></li>
+<li><p><strong>Release history</strong>: How about stability and backwards-compatibility?</p></li>
+<li><p><strong>Versioning</strong>: Will it be painful to upgrade?</p></li>
+<li><p><strong>Number of open pull requests and issues</strong>: Are they followed-up?</p></li>
+<li><p><strong>Installation instructions</strong>: Will it be difficult to get it running?</p></li>
+<li><p><strong>Example</strong>: Will it be difficult to get started?</p></li>
+<li><p><strong>License</strong>: Am I allowed to use it?</p></li>
+<li><p><strong>Contribution guide</strong>: How to contribute and decision process?</p></li>
+<li><p><strong>Code of conduct</strong>: How to make clear which behaviors are unacceptable and
+discouraged? How violations of Code of conduct will be handled?</p></li>
+<li><p><strong>Trust and community</strong>: Somebody you trust recommended it?</p></li>
+</ul>
+<p>… most of which you can learn in the <a class="reference external" href="https://coderefinery.org">CodeRefinery</a> workshop!</p>
+</section>
+<section id="how-our-work-connects-to-the-work-of-others">
+<h2>How our work connects to the work of others<a class="headerlink" href="#how-our-work-connects-to-the-work-of-others" title="Link to this heading"></a></h2>
+<figure class="align-default" id="id3">
+<img alt="Our work depends on ideas, articles, data, and software" src="../_images/in-out.jpg" />
+<figcaption>
+<p><span class="caption-text">Whether and what we can share depends on how we obtained the components.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Our work depends on outputs from others. Research of others depends on our outputs.</p></li>
+<li><p>Whether you can share your output depends on how you obtained your input.</p></li>
+<li><p>A repository that is private today might become public one day.</p></li>
+<li><p>Sometimes “OTHERS” are you yourself in the future in a different group/job.</p></li>
+<li><p>Our code often starts by changing other code: <strong>derivative work</strong>.</p></li>
+<li><p><strong>Software licenses</strong> matter. And this is what we will discuss in the next episode.</p></li>
+</ul>
+</section>
+<section id="copyright">
+<h2>Copyright<a class="headerlink" href="#copyright" title="Link to this heading"></a></h2>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/tate.jpg"><img alt="Photo of somebody taking a photo of an artwork that contains the text &quot;WHO OWNS WHAT?&quot;" src="../_images/tate.jpg" style="width: 50%;" />
+</a>
+</figure>
+<ul class="simple">
+<li><p><strong>Trademark</strong>: Protects a name/brand from impersonation.</p></li>
+<li><p><strong>Patent</strong>: Protects a novel, non-obvious, technical invention.</p></li>
+<li><p><strong>Copyright</strong>: Protects <strong>creative expression</strong>: software, writing, graphics, photos, certain datasets, this presentation.
+Practically “forever” (lifetime of author + 70 years).</p></li>
+</ul>
+<p>Copyright controls whether and how we can distribute the original work or the <strong>derivative work</strong>.</p>
+</section>
+<section id="taxonomy-of-software-licenses">
+<h2>Taxonomy of software licenses<a class="headerlink" href="#taxonomy-of-software-licenses" title="Link to this heading"></a></h2>
+<p><a class="reference external" href="https://cicero.xyz/v3/remark/0.14.0/github.com/coderefinery/social-coding/main/licensing-and-cakes.md/">“Software licensing
+and open source explained with
+cakes”</a>.</p>
+<figure class="align-default" id="id4">
+<img alt="European Union Public Licence (EUPL): guidelines July 2021" src="../_images/license-models.png" />
+<figcaption>
+<p><span class="caption-text">European Commission, Directorate-General for Informatics, Schmitz, P., European Union Public Licence (EUPL): guidelines July 2021, Publications Office, 2021, <a class="reference external" href="https://data.europa.eu/doi/10.2799/77160">https://data.europa.eu/doi/10.2799/77160</a></span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Comments:</p>
+<ul class="simple">
+<li><p>Arrows represent compatibility (A -&gt; B: B can reuse A)</p></li>
+<li><p>Proprietary/custom: Derivative work typically not possible (no arrow goes from proprietary to open)</p></li>
+<li><p>Permissive: Derivative work does not have to be shared</p></li>
+<li><p>Copyleft/reciprocal: Derivative work must be made available under the same license terms</p></li>
+<li><p>NC (non-commercial) and ND (non-derivative) exist for data licenses but not really for software licenses</p></li>
+</ul>
+<p><strong>Great resource for comparing software licenses</strong>: <a class="reference external" href="https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-find-and-compare-software-licenses">Joinup Licensing Assistant</a></p>
+<ul class="simple">
+<li><p>Provides comments on licenses</p></li>
+<li><p>Easy to compare licenses (<a class="reference external" href="https://joinup.ec.europa.eu/licence/compare/BSD-3-Clause;Apache-2.0">example</a>)</p></li>
+<li><p><a class="reference external" href="https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-compatibility-checker">Joinup Licensing Assistant - Compatibility Checker</a></p></li>
+<li><p>Not biased by some company agenda</p></li>
+</ul>
+<p>As we do here, data stewards should be careful not to give legal advice, but can:</p>
+<ul class="simple">
+<li><p>Explain common licenses</p></li>
+<li><p>Highlight compatibility issues</p></li>
+<li><p>Point researchers to institutional or legal support when needed.</p></li>
+</ul>
+</section>
+<section id="software-citation">
+<h2>Software citation<a class="headerlink" href="#software-citation" title="Link to this heading"></a></h2>
+<div class="admonition-questions questions admonition" id="questions-0">
+<p class="admonition-title">Questions</p>
+<ul class="simple">
+<li><p>Is putting software on GitHub/GitLab/… publishing?</p></li>
+<li><p>Where to publish software?</p></li>
+<li><p>How can software be cited?</p></li>
+<li><p>How can I make my software citeable?</p></li>
+</ul>
+</div>
+<section id="is-putting-software-on-github-gitlab-publishing">
+<h3>Is putting software on GitHub/GitLab/… publishing?<a class="headerlink" href="#is-putting-software-on-github-gitlab-publishing" title="Link to this heading"></a></h3>
+<figure class="align-default" id="id5">
+<a class="reference internal image-reference" href="../_images/8-fair-principles.jpg"><img alt="FAIR principles" src="../_images/8-fair-principles.jpg" style="width: 70%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">FAIR principles. (c) <a class="reference external" href="http://www.scriberia.co.uk">Scriberia</a> for <a class="reference external" href="https://the-turing-way.netlify.com">The Turing Way</a>, CC-BY.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>Is it enough to make the code public for the code to remain <strong>findable and accessible</strong>?</p>
+<ul class="simple">
+<li><p>No. Because nothing prevents me from deleting my GitHub repository or
+rewriting the Git history and we have no guarantee that GitHub will still be around in 10 years.</p></li>
+<li><p><strong>Make your code citable and persistent</strong>:
+Get a persistent identifier (PID) such as DOI in addition to sharing the
+code publicly, by using services like <a class="reference external" href="https://zenodo.org">Zenodo</a> or
+similar services.</p></li>
+</ul>
+</section>
+<section id="how-to-make-your-software-citable">
+<h3>How to make your software citable<a class="headerlink" href="#how-to-make-your-software-citable" title="Link to this heading"></a></h3>
+<p><strong>Checklist for making a release of your software citable</strong>:</p>
+<ul class="simple">
+<li><p>Assigned an appropriate license</p></li>
+<li><p>Described the software using an appropriate metadata format</p></li>
+<li><p>Clear version number</p></li>
+<li><p>Authors credited</p></li>
+<li><p>Procured a persistent identifier</p></li>
+<li><p>Added a recommended citation to the software documentation</p></li>
+</ul>
+<p>This checklist is adapted from: N. P. Chue Hong, A. Allen, A. Gonzalez-Beltran,
+et al., Software Citation Checklist for Developers (Version 0.9.0). Zenodo.
+2019b. (<a class="reference external" href="https://doi.org/10.5281/zenodo.3482769">DOI</a>)</p>
+<p><strong>Our practical recommendations</strong>:</p>
+<ul class="simple">
+<li><p>Add a file called <a class="reference external" href="https://citation-file-format.github.io/">CITATION.cff</a> (<a class="reference external" href="https://github.com/bast/runtest/blob/main/CITATION.cff">example</a>).</p></li>
+<li><p>Get a <a class="reference external" href="https://en.wikipedia.org/wiki/Digital_object_identifier">digital object identifier
+(DOI)</a> for your code
+on <a class="reference external" href="https://zenodo.org/">Zenodo</a> (<a class="reference external" href="https://zenodo.org/record/8003695">example</a>).</p></li>
+<li><p><a class="reference external" href="https://coderefinery.github.io/github-without-command-line/doi/">Step-by-step recipe</a>
+for how to make your GitHub project citable using <a class="reference external" href="https://zenodo.org/">Zenodo</a>.</p></li>
+<li><p>Make it as easy as possible: clearly say what you want cited.</p></li>
+</ul>
+<p>This is an example of a simple <code class="docutils literal notranslate"><span class="pre">CITATION.cff</span></code> file:</p>
+<div class="highlight-yaml notranslate"><div class="highlight"><pre><span></span><span class="nt">cff-version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1.2.0</span>
+<span class="nt">message</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;If</span><span class="nv"> </span><span class="s">you</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">software,</span><span class="nv"> </span><span class="s">please</span><span class="nv"> </span><span class="s">cite</span><span class="nv"> </span><span class="s">it</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">below.&quot;</span>
+<span class="nt">authors</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">family-names</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Doe</span>
+<span class="w">    </span><span class="nt">given-names</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Jane</span>
+<span class="w">    </span><span class="nt">orcid</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://orcid.org/1234-5678-9101-1121</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;My</span><span class="nv"> </span><span class="s">Research</span><span class="nv"> </span><span class="s">Software&quot;</span>
+<span class="nt">version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2.0.4</span>
+<span class="nt">doi</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">10.5281/zenodo.1234</span>
+<span class="nt">date-released</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2021-08-11</span>
+</pre></div>
+</div>
+<p>More about <code class="docutils literal notranslate"><span class="pre">CITATION.cff</span></code> files:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.github.com/en/repositories/managing-your-repositorys-settings-and-features/customizing-your-repository/about-citation-files">GitHub now supports CITATION.cff files</a></p></li>
+<li><p><a class="reference external" href="https://citation-file-format.github.io/cff-initializer-javascript/">Web form to create, edit, and validate CITATION.cff files</a></p></li>
+<li><p><a class="reference external" href="https://www.youtube.com/watch?v=zcgLIT5Qd4M">Video: “How to create a CITATION.cff using cffinit”</a></p></li>
+</ul>
+</section>
+<section id="papers-with-focus-on-scientific-software">
+<h3>Papers with focus on scientific software<a class="headerlink" href="#papers-with-focus-on-scientific-software" title="Link to this heading"></a></h3>
+<p>Where can I publish papers which are primarily focused on my scientific
+software?  Great list/summary is provided in this blog post: <a class="reference external" href="https://www.software.ac.uk/top-tip/which-journals-should-i-publish-my-software">“In which
+journals should I publish my software?” (Neil P. Chue
+Hong)</a></p>
+</section>
+<section id="how-to-cite-software">
+<h3>How to cite software<a class="headerlink" href="#how-to-cite-software" title="Link to this heading"></a></h3>
+<div class="admonition-great-resources admonition">
+<p class="admonition-title">Great resources</p>
+<ul class="simple">
+<li><p>A. M. Smith, D. S. Katz, K. E. Niemeyer, and FORCE11 Software Citation
+Working Group, “Software citation principles,” PeerJ Comput. Sci., vol. 2,
+no. e86, 2016 (<a class="reference external" href="https://doi.org/10.7717/peerj-cs.86">DOI</a>)</p></li>
+<li><p>D. S. Katz, N. P. Chue Hong, T. Clark, et al., Recognizing the value of
+software: a software citation guide [version 2; peer review: 2 approved].
+F1000Research 2021, 9:1257 (<a class="reference external" href="https://doi.org/10.12688/f1000research.26932.2">DOI</a>)</p></li>
+<li><p>N. P. Chue Hong, A. Allen, A. Gonzalez-Beltran, et al., Software Citation
+Checklist for Authors (Version 0.9.0). Zenodo. 2019a. (<a class="reference external" href="https://doi.org/10.5281/zenodo.3479199">DOI</a>)</p></li>
+<li><p>N. P. Chue Hong, A. Allen, A. Gonzalez-Beltran, et al., Software Citation
+Checklist for Developers (Version 0.9.0). Zenodo. 2019b. (<a class="reference external" href="https://doi.org/10.5281/zenodo.3482769">DOI</a>)</p></li>
+</ul>
+</div>
+<p>Recommended format for software citation is to ensure the following information
+is provided as part of the reference (from <a class="reference external" href="https://doi.org/10.12688/f1000research.26932.2">Katz, Chue Hong, Clark,
+2021</a> which also contains
+software citation examples):</p>
+<ul class="simple">
+<li><p>Creator</p></li>
+<li><p>Title</p></li>
+<li><p>Publication venue</p></li>
+<li><p>Date</p></li>
+<li><p>Identifier</p></li>
+<li><p>Version</p></li>
+<li><p>Type</p></li>
+</ul>
+<div class="admonition-fair-for-research-software-fair4rs admonition">
+<p class="admonition-title">FAIR for Research Software (FAIR4RS)</p>
+<p>The FAIR4RS Principles adapt the original FAIR data principles to improve the <strong>Findability, Accessibility, Interoperability, and Reusability</strong> of research software. They provide guidelines to make research software more open, discoverable, citable, and reusable, which supports reproducibility and open science. The summary of the FAIR4RS below is a compressed version of the principles listed in <a class="reference external" href="https://www.nature.com/articles/s41597-022-01710-x">Barker, Michelle, et al. “Introducing the FAIR Principles for research software.” Scientific Data 9.1 (2022): 622</a>.</p>
+<ul class="simple">
+<li><p><strong>Findable</strong>: Software should have a globally unique and persistent identifier<br />
+(e.g. clear versioning of releases, DOI from Zenodo when depositing a software release, software metadata in citation file).</p></li>
+<li><p><strong>Accessible</strong>: Software and metadata should be retrievable using open protocols<br />
+(e.g. downloading from GitHub or Zenodo).</p></li>
+<li><p><strong>Interoperable</strong>: Software should use open formats and standards to work with other tools<br />
+(e.g. input/output files in CSV, dependencies listed in <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> or <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>, configuration files in yaml).</p></li>
+<li><p><strong>Reusable</strong>: Software should have clear licensing, documentation, and provenance<br />
+(e.g. a standard license and a <code class="docutils literal notranslate"><span class="pre">README</span></code> with usage instructions, authors listed with ORCIDs).</p></li>
+</ul>
+<p>There are great resources to self-evaluate the <em>FAIRness</em> of your research software:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://fairsoftwarechecklist.net/">FAIR Software Checklist</a> which provides a questionnaire and even a badge of how FAIR the software is</p></li>
+<li><p><a class="reference external" href="https://fair-software.nl/">FAIR Software NL</a> highlights with nice visuals the five most important elemnts of FAIR4RS (1. Public accessible repository with version control; 2. License; 3. Software registry; 4. Software citation file; 5. Software quality checklist)</p></li>
+</ul>
+</div>
+<div class="admonition-keypoints keypoints admonition" id="keypoints-0">
+<p class="admonition-title">Keypoints</p>
+<ul class="simple">
+<li><p><strong>You cannot ignore licensing</strong>: default is “no one can make copies or
+derivative works”.</p></li>
+<li><p>Citation.cff files can make it easier for others to cite software and provide credit.</p></li>
+</ul>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../reproducible_research/" class="btn btn-neutral float-left" title="Reproducible research" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../wrapup/" class="btn btn-neutral float-right" title="Wrap up and where to go from here" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, CodeRefinery contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

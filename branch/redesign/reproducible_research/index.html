@@ -1,0 +1,584 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reproducible research &mdash; CodeRefinery in a day  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=b8b12719"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Social coding" href="../social_coding/" />
+    <link rel="prev" title="Using git to collaborate" href="../git-collaborative/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            CodeRefinery in a day
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">The lesson</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting-ready/">Getting ready for this course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git-intro/">Introduction to version control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../git-collaborative/">Using git to collaborate</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Reproducible research</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#small-steps-towards-reproducible-research">Small steps towards reproducible research</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#motivation">Motivation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why-talking-about-reproducible-research">Why talking about reproducible research?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#levels-of-reproducibility">Levels of reproducibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#discussion-reading-assignment">Discussion: Reading assignment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#file-naming-and-organizing-files-documentation">File naming and organizing files -&gt; documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#directory-structure-for-projects">Directory structure for projects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tracking-source-code-data-and-results">Tracking source code, data, and results</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#some-tools-and-templates">Some tools and templates</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#excursion-reproducible-publications">Excursion: Reproducible publications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#discussion-on-collaborative-writing-of-academic-papers">Discussion on collaborative writing of academic papers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tools-for-collaborative-writing-and-version-control-of-manuscripts">Tools for collaborative writing and version control of manuscripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#executable-manuscripts">Executable manuscripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#resources-on-research-compendia">Resources on research compendia</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#recording-dependencies">Recording dependencies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#dependency-and-environment-management">Dependency and environment management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#workflow-tools">Workflow tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#several-steps-from-input-data-to-result">Several steps from input data to result</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#example-workflow-tool-snakemake">Example workflow tool: Snakemake</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#similar-tools">Similar tools</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#containers">Containers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-is-a-container">What is a container?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#from-definition-files-to-container-images-to-containers">From definition files to container images to containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#you-may-have-use-for-containers-in-different-ways">You may have use for containers in different ways</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pros-and-cons-of-containers">Pros and cons of containers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#where-can-one-share-or-find-images">Where can one share or find images?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../social_coding/">Social coding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapup/">Wrap up and where to go from here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick-reference/">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/">Instructor’s guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery in a day</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Reproducible research</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/CR-in-a-day/blob/main/content/reproducible_research.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="reproducible-research">
+<h1>Reproducible research<a class="headerlink" href="#reproducible-research" title="Link to this heading"></a></h1>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<ul class="simple">
+<li><p>Understand why computational reproducibility is important</p></li>
+<li><p>Understand how to organize research projects</p></li>
+<li><p>Understand what dependency management tools, workflow tools and containers are and can be useful for</p></li>
+</ul>
+</div>
+<p>These materials are adopted from CodeRefinery lesson <a class="reference external" href="https://coderefinery.github.io/reproducible-research/">Reproducible research</a>.</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Link to this heading"></a></h2>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/reproducible-research.jpg"><img alt="Quick steps to reproducible research. " src="../_images/reproducible-research.jpg" style="width: 100%;" />
+</a>
+</figure>
+<p>[Picture by Heidi Seibold]</p>
+<p>The CodeRefinery workshop touches upon all these topics. Here we only have time to take a brief look at some of the steps.</p>
+</section>
+<section id="small-steps-towards-reproducible-research">
+<h2>Small steps towards reproducible research<a class="headerlink" href="#small-steps-towards-reproducible-research" title="Link to this heading"></a></h2>
+<p>If this is all new to you, it may feel quite overwhelming.</p>
+<p><strong>Our recommendation:</strong> Don’t worry! Focus on “good enough” understanding to continue reading up on the topics.</p>
+<p>As a data steward you may never <em>implement</em> all of these practices yourself.<br />
+But your role may be to:</p>
+<ul class="simple">
+<li><p>Recognize reproducibility risks</p></li>
+<li><p>Ask the right questions</p></li>
+<li><p>Point researchers to appropriate tools</p></li>
+<li><p>Interpret what “sufficient” reproducibility looks like in different contexts</p></li>
+</ul>
+<p>We generally recommend researchers to start by picking one topic that seems reasonable to implement for their current project. Something that helps THEM right now. This may be something they may have to implement due to requirements from funders or the journal where they want to publish your research. Their requirements can be used as a checklist and find tools that feel comfortable for them.</p>
+<p>A great way to see what are the really important things to implement is to meet with a colleague, exchange codes and try to run each others code. Every question the colleague has to ask about the code gives a hint on where things may need to improve.</p>
+<p>Keeping a “log book” while working on code also serves as a great basis for making code more reproducible.</p>
+</section>
+<section id="motivation">
+<h2>Motivation<a class="headerlink" href="#motivation" title="Link to this heading"></a></h2>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/research_comic_phd.gif"><img alt="Research comic" src="../_images/research_comic_phd.gif" style="width: 100%;" />
+</a>
+</figure>
+<div class="admonition-a-scary-anecdote admonition">
+<p class="admonition-title">A scary anecdote</p>
+<ul class="simple">
+<li><p>A group of researchers obtain great results and submit their work to a high-profile journal.</p></li>
+<li><p>Reviewers ask for new figures and additional analysis.</p></li>
+<li><p>The researchers start working on revisions and generate modified figures, but find inconsistencies with old figures.</p></li>
+<li><p>The researchers can’t find some of the data they used to generate the original results, and
+can’t figure out which parameters they used when running their analyses.</p></li>
+<li><p>The manuscript is still languishing in the drawer …</p></li>
+</ul>
+</div>
+</section>
+<hr class="docutils" />
+<section id="why-talking-about-reproducible-research">
+<h2>Why talking about reproducible research?<a class="headerlink" href="#why-talking-about-reproducible-research" title="Link to this heading"></a></h2>
+<p>A 2016
+<a class="reference external" href="http://www.nature.com/news/1-500-scientists-lift-the-lid-on-reproducibility-1.19970">survey</a>
+in Nature revealed that irreproducible experiments are a problem across all
+domains of science:</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/reproducibility_nature.jpg"><img alt="reproduciblity Nature" src="../_images/reproducibility_nature.jpg" style="width: 100%;" />
+</a>
+</figure>
+<p>This study is now some years old but the highlighted problem did not get
+smaller.</p>
+</section>
+<hr class="docutils" />
+<section id="levels-of-reproducibility">
+<h2>Levels of reproducibility<a class="headerlink" href="#levels-of-reproducibility" title="Link to this heading"></a></h2>
+<p>A published article is like the top of a pyramid. It rests on multiple
+levels, each contributing to its reproducibility. Data stewards often work on the <em>lower layers</em> of this pyramid, where small improvements can have large impact.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/repro-pyramid.png"><img alt="Reproducibility pyramid" src="../_images/repro-pyramid.png" style="width: 100%;" />
+</a>
+</figure>
+<p>[Steeves, Vicky (2017) in “Reproducibility Librarianship,” Collaborative Librarianship: Vol. 9: Iss. 2, Article 4.
+Available at: https://digitalcommons.du.edu/collaborativelibrarianship/vol9/iss2/4]</p>
+<p>This also means that it is important to think about it from the beginning of the research life cycle!</p>
+</section>
+<section id="discussion-reading-assignment">
+<h2>Discussion: Reading assignment<a class="headerlink" href="#discussion-reading-assignment" title="Link to this heading"></a></h2>
+<div class="admonition-discussion discussion important admonition" id="discussion-0">
+<p class="admonition-title">Discussion</p>
+<p>In small groups, discuss the reading assignment for today - <a class="reference external" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005510">Good enough practices in scientific computing</a></p>
+<ol class="arabic simple">
+<li><p>What may be barriers to implementation these practices?</p></li>
+<li><p>What could motivate researchers to care about their implementation?</p></li>
+<li><p>How can we support researchers with the implementation?
+Bonus: Do you know any good tutorials for any of the topics?</p></li>
+</ol>
+<p>Report back in the collaborative notes.</p>
+</div>
+</section>
+<section id="file-naming-and-organizing-files-documentation">
+<h2>File naming and organizing files -&gt; documentation<a class="headerlink" href="#file-naming-and-organizing-files-documentation" title="Link to this heading"></a></h2>
+<p>One of the first steps to make your work reproducible is to organize your projects well.
+A good directory structure is one that makes sense to someone <strong>who has never seen the project before</strong>.
+Let’s go over some of the basic things which people have found to work (and not to work).</p>
+<section id="directory-structure-for-projects">
+<h3>Directory structure for projects<a class="headerlink" href="#directory-structure-for-projects" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Project files in a <strong>single directory</strong></p></li>
+<li><p><strong>Different projects</strong> should have <strong>separate directories</strong></p></li>
+<li><p>Use <strong>consistent and informative directory structure</strong></p>
+<ul>
+<li><p>Avoid spaces in directory and file names – use <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">_</span></code> or CamelCase instead (nicer for computers to handle)</p></li>
+</ul>
+</li>
+<li><p>If you need to separate public/private directories,</p>
+<ul>
+<li><p>put them separately in public and private Git repositories, or</p></li>
+<li><p>use <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> to exclude the private information from being tracked</p></li>
+</ul>
+</li>
+<li><p>Add a <strong>README file</strong> to describe the project and instructions on reproducing the results</p></li>
+<li><p>If you want to use the <strong>same code in multiple projects</strong>, host it on GitHub (or similar) and clone it into each of your project directories</p></li>
+</ul>
+<p>A project directory can look something like this:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>project_name/
+├──<span class="w"> </span>README.md<span class="w">             </span><span class="c1"># overview of the project</span>
+├──<span class="w"> </span>data/<span class="w">                 </span><span class="c1"># data files used in the project</span>
+│<span class="w">   </span>├──<span class="w"> </span>README.md<span class="w">         </span><span class="c1"># describes where data came from</span>
+│<span class="w">   </span>└──<span class="w"> </span>sub-directory/<span class="w">       </span><span class="c1"># may contain subdirectories</span>
+├──<span class="w"> </span>processed_data/<span class="w">       </span><span class="c1"># intermediate files from the analysis</span>
+├──<span class="w"> </span>manuscript/<span class="w">           </span><span class="c1"># manuscript describing the results</span>
+├──<span class="w"> </span>results/<span class="w">              </span><span class="c1"># results of the analysis (data, tables, figures)</span>
+├──<span class="w"> </span>src/<span class="w">                  </span><span class="c1"># contains all code in the project</span>
+│<span class="w">   </span>├──<span class="w"> </span>LICENSE<span class="w">           </span><span class="c1"># license for your code</span>
+│<span class="w">   </span>├──<span class="w"> </span>requirements.txt<span class="w">  </span><span class="c1"># software requirements and dependencies</span>
+│<span class="w">   </span>└──<span class="w"> </span>...
+└──<span class="w"> </span>doc/<span class="w">                  </span><span class="c1"># documentation for your project</span>
+<span class="w">    </span>├──<span class="w"> </span>index.rst
+<span class="w">    </span>└──<span class="w"> </span>...
+</pre></div>
+</div>
+</section>
+<hr class="docutils" />
+<section id="tracking-source-code-data-and-results">
+<h3>Tracking source code, data, and results<a class="headerlink" href="#tracking-source-code-data-and-results" title="Link to this heading"></a></h3>
+<ul>
+<li><p>All code is version controlled and goes in the <code class="docutils literal notranslate"><span class="pre">src/</span></code> or <code class="docutils literal notranslate"><span class="pre">source/</span></code> directory</p></li>
+<li><p>Include appropriate LICENSE file and information on software requirements</p></li>
+<li><p>You can also version control data files or input files under <code class="docutils literal notranslate"><span class="pre">data/</span></code></p>
+<ul class="simple">
+<li><p>If data files are too large (or sensitive) to track, untrack them using <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code></p></li>
+</ul>
+</li>
+<li><p>Intermediate files from the analysis are kept in <code class="docutils literal notranslate"><span class="pre">processed_data/</span></code></p></li>
+<li><p>Consider using Git tags to mark specific versions of results (version
+submitted to a journal, dissertation version, poster version, etc.):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>tag<span class="w"> </span>-a<span class="w"> </span>thesis-submitted<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;this is the submitted version of my thesis&quot;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Check the <a class="reference external" href="https://coderefinery.github.io/git-intro/">Git-intro lesson</a> for further info.</p>
+</section>
+<section id="some-tools-and-templates">
+<h3>Some tools and templates<a class="headerlink" href="#some-tools-and-templates" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://devtools.r-lib.org/">R devtools</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Materials-Data-Science-and-Informatics/fair-python-cookiecutter">Python cookiecutter template</a></p></li>
+<li><p><a class="reference external" href="https://github.com/the-turing-way/reproducible-project-template">Reproducible research template</a> by the Turing Way</p></li>
+</ul>
+<p>More tools and templates in <a class="reference external" href="https://heidiseibold.ck.page/posts/setting-up-a-fair-and-reproducible-project">Heidi Seibolds blog</a>.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="excursion-reproducible-publications">
+<h2>Excursion: Reproducible publications<a class="headerlink" href="#excursion-reproducible-publications" title="Link to this heading"></a></h2>
+<section id="discussion-on-collaborative-writing-of-academic-papers">
+<h3>Discussion on collaborative writing of academic papers<a class="headerlink" href="#discussion-on-collaborative-writing-of-academic-papers" title="Link to this heading"></a></h3>
+<p>-&gt; Consider using <strong>version control for manuscripts</strong> as well. It may help you when keeping track of edits + if you sync it online then you don’t have to worry about losing your work.</p>
+<p>Version control does not have to mean git, but could also mean using “tracking changes” in tools like Word, Google Docs, or Overleaf (find links below).</p>
+</section>
+<section id="tools-for-collaborative-writing-and-version-control-of-manuscripts">
+<h3>Tools for collaborative writing and version control of manuscripts<a class="headerlink" href="#tools-for-collaborative-writing-and-version-control-of-manuscripts" title="Link to this heading"></a></h3>
+<p>Git <strong>can</strong> be used to collaborate on manuscripts written in, e.g., LaTeX and other text-based formats. However it might not always be the most convenient. Other tools exist to make the process more enjoyable:</p>
+<p>You can <strong>collaboratively gather notes</strong> using self-hosted or public instances of tools like <a class="reference external" href="https://hedgedoc.org/">HedgeDoc</a> and <a class="reference external" href="https://etherpad.org">Etherpad</a> or use online options like <a class="reference external" href="https://hackmd.io/">HackMD</a>, <a class="reference external" href="https://docs.google.com">Google Docs</a> or the Microsoft online tools for easy and efficient collaboration.</p>
+<p>To format your notes into a manuscript, you can use Word-like online editors or tools like <a class="reference external" href="https://www.overleaf.com">Overleaf</a> (LaTeX) or <a class="reference external" href="https://typst.app/">Typst</a> (markdown). Most of the tools in this section even provide a git integration.</p>
+<p><a class="reference external" href="https://github.com/manubot/rootstock">Manubot</a> offers another way to turn your written word into a fully rendered manuscript using GitHub.</p>
+</section>
+<section id="executable-manuscripts">
+<h3>Executable manuscripts<a class="headerlink" href="#executable-manuscripts" title="Link to this heading"></a></h3>
+<p>You may also want to consider writing an executable manuscript using tools like <a class="reference external" href="https://jupyter.org">Jupyter Notebooks</a> hosted on <a class="reference external" href="https://mybinder.org">Binder</a>, <a class="reference external" href="https://quarto.org/">Quarto</a>, <a class="reference external" href="https://www.authorea.com">Authorea</a> or <a class="reference external" href="https://observablehq.com/">Observable</a>, to name a few.</p>
+</section>
+<section id="resources-on-research-compendia">
+<h3>Resources on research compendia<a class="headerlink" href="#resources-on-research-compendia" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://book.the-turing-way.org/reproducible-research/compendia">About research compendia at the Turing Way</a></p></li>
+<li><p><a class="reference external" href="http://inundata.org/talks/rstd19/#/">“Research compendia”</a>: a set of good practices for reproducible data analysis in R, but much is transferable to other languages.</p></li>
+<li><p><a class="reference external" href="https://github.com/benmarwick/rrtools">rrtools</a>: instructions, templates, and functions for writing a reproducible article or report with R.</p></li>
+<li><p>…</p></li>
+</ul>
+</section>
+</section>
+<section id="recording-dependencies">
+<h2>Recording dependencies<a class="headerlink" href="#recording-dependencies" title="Link to this heading"></a></h2>
+<p>Our codes often depend on other codes that in turn depend on other codes …</p>
+<ul class="simple">
+<li><p><strong>Reproducibility</strong>: We can version-control our code with Git but how should we version-control dependencies?
+How can we capture and communicate dependencies?</p></li>
+<li><p><strong>Dependency hell</strong>: Different codes on the same environment can have conflicting dependencies.</p></li>
+</ul>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/dependency.png"><img alt="An image showing blocks (=codes) depending on each other for stability" src="../_images/dependency.png" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">From <a class="reference external" href="https://xkcd.com/2347/">xkcd - dependency</a>. Another image that might be familiar to some of you working with Python can be found on <a class="reference external" href="https://xkcd.com/1987/">xkcd - superfund</a>.</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition-kitchen-analogy discussion important admonition" id="discussion-1">
+<p class="admonition-title">Kitchen analogy</p>
+<ul class="simple">
+<li><p>Software &lt;-&gt; recipe</p></li>
+<li><p>Data &lt;-&gt; ingredients</p></li>
+<li><p>Libraries &lt;-&gt; pots/tools</p></li>
+</ul>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="../_images/recipe.png"><img alt="Cooking recipe in an unfamiliar language" src="../_images/recipe.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Cooking recipe in an unfamiliar language [Midjourney, CC-BY-NC 4.0]</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="id3">
+<a class="reference internal image-reference" href="../_images/libraries.png"><img alt="Kitchen with few open cooking books" src="../_images/libraries.png" style="width: 50%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">When we create recipes, we often use tools created by others (libraries) [Midjourney, CC-BY-NC 4.0]</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+</div>
+</section>
+<hr class="docutils" />
+<section id="dependency-and-environment-management">
+<h2>Dependency and environment management<a class="headerlink" href="#dependency-and-environment-management" title="Link to this heading"></a></h2>
+<p>Tools like <strong>Conda, Anaconda, pip, virtualenv, Pipenv, pyenv, Poetry, renv</strong> and files to record dependencies like <strong>requirements.txt</strong> and <strong>environment.yml</strong> try to solve the following problems:</p>
+<ul class="simple">
+<li><p><strong>Defining a specific set of dependencies</strong></p></li>
+<li><p><strong>Installing those dependencies</strong> mostly automatically</p></li>
+<li><p><strong>Recording the versions</strong> for all dependencies</p></li>
+<li><p><strong>Isolate environments</strong></p>
+<ul>
+<li><p>On your computer for projects, so they can use different software</p></li>
+<li><p>Isolate environments on computers with many users (and allow self-installations)</p></li>
+</ul>
+</li>
+<li><p>Using <strong>different package versions</strong> per project (also, e.g., Python/R versions)</p></li>
+<li><p>Provide tools and services to <strong>share packages</strong></p></li>
+</ul>
+<p>Isolated environments are also useful because they help you make sure
+that you know your dependencies!</p>
+<p><strong>If things go wrong, you can delete and re-create</strong> - much better
+than debugging. The more often you re-create your environment, the
+more reproducible it is.</p>
+</section>
+<section id="workflow-tools">
+<h2>Workflow tools<a class="headerlink" href="#workflow-tools" title="Link to this heading"></a></h2>
+</section>
+<section id="several-steps-from-input-data-to-result">
+<h2>Several steps from input data to result<a class="headerlink" href="#several-steps-from-input-data-to-result" title="Link to this heading"></a></h2>
+<p><em>The following material is partly derived from a <a class="reference external" href="https://hpc-carpentry.github.io/hpc-python/">HPC Carpentry lesson</a>.</em></p>
+<p>In this episode, we will use an <a class="reference external" href="https://github.com/coderefinery/word-count">example
+project</a> which finds most frequent
+words in books and plots the result from those statistics.  In this example we
+wish to:</p>
+<ol class="arabic simple">
+<li><p>Analyze word frequencies using <a class="reference external" href="https://github.com/coderefinery/word-count/blob/main/code/count.py">code/count.py</a>
+for 4 books
+(they are all in the <a class="reference external" href="https://github.com/coderefinery/word-count/tree/main/data">data</a> directory).</p></li>
+<li><p>Plot a histogram using <a class="reference external" href="https://github.com/coderefinery/word-count/blob/main/plot/plot.py">plot/plot.py</a>.</p></li>
+</ol>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/arrows.png"><img alt="From book to word counts to plot" src="../_images/arrows.png" style="width: 100%;" />
+</a>
+</figure>
+<p>Example code call (for one book only):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>python<span class="w"> </span>code/count.py<span class="w"> </span>data/isles.txt<span class="w"> </span>&gt;<span class="w"> </span>statistics/isles.data
+<span class="gp">$ </span>python<span class="w"> </span>code/plot.py<span class="w"> </span>--data-file<span class="w"> </span>statistics/isles.data<span class="w"> </span>--plot-file<span class="w"> </span>plot/isles.png
+</pre></div>
+</div>
+<p>Another way to analyze the data would be via a graphical user interface (GUI), where you can for example drag and drop files and click buttons to do the different processing steps.</p>
+<p>Both of the above (single line commands and simple graphical interfaces) are tricky in terms of reproducibility. We currently have two steps and 4 books. But <strong>imagine having 4 steps and 500 books</strong>.
+How could we deal with this?</p>
+<p>As a first idea we could express the workflow with a script. The repository includes such script called <code class="docutils literal notranslate"><span class="pre">run_all.sh</span></code>.</p>
+<p>We can run it with:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>bash<span class="w"> </span>run_all.sh
+</pre></div>
+</div>
+<p>This is <strong>imperative style</strong>: we tell the script to run these
+steps in precisely this order, as we would run them manually, one after another.</p>
+<p>Sometimes it may be helpful to go from imperative to declarative style. Rather than saying “do this and then that” we describe dependencies between steps, but we let the tool figure out the order of steps to produce results.</p>
+<section id="example-workflow-tool-snakemake">
+<h3>Example workflow tool: <a class="reference external" href="https://snakemake.readthedocs.io/en/stable/index.html">Snakemake</a><a class="headerlink" href="#example-workflow-tool-snakemake" title="Link to this heading"></a></h3>
+<p>Tools like Snakemake help us with <strong>reproducibility</strong> by supporting us with <strong>automation</strong>, <strong>scalability</strong> and <strong>portability</strong> of our workflows.</p>
+</section>
+<section id="similar-tools">
+<h3>Similar tools<a class="headerlink" href="#similar-tools" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.gnu.org/software/make/">Make</a></p></li>
+<li><p><a class="reference external" href="https://www.nextflow.io/">Nextflow</a></p></li>
+<li><p><a class="reference external" href="https://taskfile.dev/">Task</a></p></li>
+<li><p><a class="reference external" href="https://www.commonwl.org/">Common Workflow Language</a></p></li>
+<li><p>Many <a class="reference external" href="https://github.com/common-workflow-language/common-workflow-language/wiki/Existing-Workflow-systems">specialized frameworks</a> exist.</p></li>
+<li><p><a class="reference external" href="https://raps-with-r.dev/">Book on building reproducible analytical pipelines with R</a></p></li>
+<li><p><a class="reference external" href="https://books.ropensci.org/targets/">{targets} R package - make-like pipeline tool for R</a></p></li>
+</ul>
+</section>
+</section>
+<section id="containers">
+<h2>Containers<a class="headerlink" href="#containers" title="Link to this heading"></a></h2>
+<section id="what-is-a-container">
+<h3>What is a container?<a class="headerlink" href="#what-is-a-container" title="Link to this heading"></a></h3>
+<p>Imagine if you didn’t have to install things yourself, but instead you could
+get a computer with the exact software for a task pre-installed. Containers
+effectively do that, with various advantages and disadvantages. They are
+<strong>like an entire operating system with software installed, all in one file</strong>.</p>
+<figure class="align-default" id="id4">
+<a class="reference internal image-reference" href="../_images/docker_meme.jpg"><img alt="He said, then we will ship your machine. And that's how Docker was born." src="../_images/docker_meme.jpg" style="width: 60%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">From <a class="reference external" href="https://www.reddit.com/r/ProgrammerHumor/comments/cw58z7/it_works_on_my_machine/">reddit</a>.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<div class="admonition-kitchen-analogy discussion important admonition" id="discussion-2">
+<p class="admonition-title">Kitchen analogy</p>
+<ul class="simple">
+<li><p>Our codes/scripts &lt;-&gt; cooking recipes</p></li>
+<li><p>Container definition files &lt;-&gt; like a blueprint to build a kitchen with all
+utensils in which the recipe can be prepared.</p></li>
+<li><p>Container images &lt;-&gt; showroom kitchens</p></li>
+<li><p>Containers &lt;-&gt; a real connected kitchen</p></li>
+</ul>
+</div>
+</section>
+<section id="from-definition-files-to-container-images-to-containers">
+<h3>From definition files to container images to containers<a class="headerlink" href="#from-definition-files-to-container-images-to-containers" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Containers can be built to bundle <em>all the necessary ingredients</em> (data, code, environment, operating system).</p></li>
+<li><p>A container image is like a piece of paper with all the operating system on it. When you run it,
+a transparent sheet is placed on top to form a container. The container runs and writes only on
+that transparent sheet (and what other mounts have been layered on top). When you are done,
+the transparent sheet is thrown away. This can be repeated as often as you want, and base is always the same.</p></li>
+<li><p>Definition files (e.g., Dockerfile or Singularity definition file) are text
+files that contain a series of instructions to build container images.</p></li>
+</ul>
+</section>
+<section id="you-may-have-use-for-containers-in-different-ways">
+<h3>You may have use for containers in different ways<a class="headerlink" href="#you-may-have-use-for-containers-in-different-ways" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><strong>Installing a certain software is tricky</strong>, or not supported for your operating system? - Check if an image is available and run the software from a container instead!</p></li>
+<li><p>You want to make sure your colleagues are using the <strong>same environment</strong> for running your code? - Provide them an image of your container!</p>
+<ul>
+<li><p>If this does not work, because they are using a different architecture than you do? - Provide a definition file for them to <strong>build the image suitable for their computers</strong>. This does not create the exact environment you have, but in most cases a similar enough one.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="pros-and-cons-of-containers">
+<h3>Pros and cons of containers<a class="headerlink" href="#pros-and-cons-of-containers" title="Link to this heading"></a></h3>
+<p>Containers are popular for a reason - they solve a number of
+important problems:</p>
+<ul class="simple">
+<li><p>Allow for seamlessly <strong>moving workflows across different platforms</strong>.</p></li>
+<li><p>Can solve the <strong>“works on my machine”</strong> situation.</p></li>
+<li><p>For software with many dependencies, in turn with its own dependencies,
+containers offer possibly the only way to preserve the
+computational experiment for <strong>future reproducibility</strong>.</p></li>
+<li><p>A mechanism to “send the computer to the data” when the <strong>dataset is too large</strong> to transfer.</p></li>
+<li><p><strong>Installing software into a file</strong> instead of into your computer (removing
+a file is often easier than uninstalling software if you suddenly regret an
+installation).</p></li>
+</ul>
+<p>However, containers may also have some drawbacks:</p>
+<ul class="simple">
+<li><p>Can be used to hide away software installation problems and thereby
+<strong>discourage good software development practices</strong>.</p></li>
+<li><p>Instead of “works on my machine” problem: <strong>“works only in this container”</strong> problem?</p></li>
+<li><p>They can be <strong>difficult to modify</strong>.</p></li>
+<li><p>Container <strong>images can become large</strong>.</p></li>
+</ul>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Use only <strong>official and trusted images</strong>!  Not all images can be trusted! There
+have been examples of contaminated images, so investigate before using images
+blindly. Apply the same caution as when installing software packages from untrusted
+package repositories.</p>
+</div>
+<p>Containers solve many problems, but they also raise questions about long-term maintenance, trust, and governance - areas where <strong>data stewards play an important role</strong>.</p>
+</section>
+<hr class="docutils" />
+<section id="where-can-one-share-or-find-images">
+<h3>Where can one share or find images?<a class="headerlink" href="#where-can-one-share-or-find-images" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://hub.docker.com/">Docker Hub</a></p></li>
+<li><p><a class="reference external" href="https://quay.io/">Quay</a></p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry">GitHub Container Registry</a></p></li>
+<li><p><a class="reference external" href="https://docs.gitlab.com/ee/user/packages/container_registry/">GitLab Container Registry</a></p></li>
+<li><p>GitHub/GitLab release artifacts</p></li>
+<li><p><a class="reference external" href="https://zenodo.org/">Zenodo</a></p></li>
+</ul>
+<hr class="docutils" />
+<div class="admonition-keypoints keypoints admonition" id="keypoints-0">
+<p class="admonition-title">Keypoints</p>
+<ul class="simple">
+<li><p>You don’t need to master these tools - but you should be able to recognize when it would help.</p></li>
+<li><p>Without reproducibility in scientific computing, everyone would have to start a new project / code from scratch.</p></li>
+<li><p>Containers can be helpful if complex setups are needed to run a specific software.</p></li>
+<li><p>They can also be helpful for prototyping without “messing up” your own computing environment, or for running software that requires a different operating system than your own.</p></li>
+</ul>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../git-collaborative/" class="btn btn-neutral float-left" title="Using git to collaborate" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../social_coding/" class="btn btn-neutral float-right" title="Social coding" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, CodeRefinery contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

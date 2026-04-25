@@ -1,0 +1,465 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to version control &mdash; CodeRefinery in a day  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=9edc463e" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=76b2166b" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=9c3e77be" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9bcbadda"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=35a8b989"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=b8b12719"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Using git to collaborate" href="../git-collaborative/" />
+    <link rel="prev" title="Getting ready for this course" href="../getting-ready/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            CodeRefinery in a day
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">The lesson</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../getting-ready/">Getting ready for this course</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to version control</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#why-is-version-control-relevant-for-data-stewards">Why is version control relevant for data stewards?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why-do-we-need-to-keep-track-of-versions">Why do we need to keep track of versions?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#features-roll-back-branching-merging-collaboration">Features: roll-back, branching, merging, collaboration</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#terminology-git-repositories-a-place-to-store">Terminology: Git repositories - a place to store</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#demo-exploring-a-repository-online">Demo - exploring a repository online</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#terminology-commit">Terminology: Commit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#terminology-clone-download">Terminology: Clone - download</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#terminology-git-vs-github">Terminology: Git vs GitHub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#what-we-typically-like-to-version-control">What we typically like to version control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#difficulties-of-version-control">Difficulties of version control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why-git-and-not-any-of-the-other-tools">Why git and not any of the other tools?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-our-first-repository">Exercise: Our first repository</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#exercise-editing-files-online">Exercise: Editing files online</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#working-with-my-own-github-repository">Working with my own GitHub repository</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#on-github-see-also-exercise-above">… on GitHub (see also exercise above!)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#locally">… locally</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../git-collaborative/">Using git to collaborate</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../reproducible_research/">Reproducible research</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../social_coding/">Social coding</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../wrapup/">Wrap up and where to go from here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../quick-reference/">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/">Instructor’s guide</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">CodeRefinery in a day</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Introduction to version control</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/coderefinery/CR-in-a-day/blob/main/content/git-intro.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="introduction-to-version-control">
+<h1>Introduction to version control<a class="headerlink" href="#introduction-to-version-control" title="Link to this heading"></a></h1>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<ul class="simple">
+<li><p>Explain why version control can be useful.</p></li>
+<li><p>Get an overview of the GitHub webinterface</p></li>
+<li><p>Apply basic Git workflows through the GitHub webinterface.</p></li>
+</ul>
+</div>
+<p>These materials is adopted from CodeRefinery lesson <a class="reference external" href="https://coderefinery.github.io/git-intro/">“Introduction to version control”</a> with focus on working online with GitHub.</p>
+<p>It is normal, that all the new terms and concepts may be overwhelming. Take it as a starting point, and come back when you want to try something new. You may not have use for these tools yourself, but good to know anyway to potentially forward researchers.</p>
+<ul class="simple">
+<li><p>Version control is the practice of <strong>tracking and managing changes over time</strong>.</p></li>
+<li><p>You can think of version control like regularly taking a photo (“snapshot”) of your work.</p></li>
+</ul>
+<section id="why-is-version-control-relevant-for-data-stewards">
+<h2>Why is version control relevant for data stewards?<a class="headerlink" href="#why-is-version-control-relevant-for-data-stewards" title="Link to this heading"></a></h2>
+<p>You may not write code yourself, but as a data steward, you may:</p>
+<ul class="simple">
+<li><p>Review research software or repositories linked in a data management plan</p></li>
+<li><p>Advise on reproducibility and transparency</p></li>
+<li><p>Help researchers choose appropriate platforms</p></li>
+<li><p>Interpret repository structure, history, and licensing</p></li>
+</ul>
+<p>This lesson gives you the <em>vocabulary and mental model</em> needed for those tasks.</p>
+</section>
+<section id="why-do-we-need-to-keep-track-of-versions">
+<h2>Why do we need to keep track of versions?<a class="headerlink" href="#why-do-we-need-to-keep-track-of-versions" title="Link to this heading"></a></h2>
+<p><strong>Problem: If you have to identify and find your code from 17 days
+ago, can you?</strong></p>
+<p>Version control is an answer to the following questions (do you recognize some
+of them?):</p>
+<ul class="simple">
+<li><p>“It broke … hopefully I have a working version somewhere?”</p></li>
+<li><p>“Can you please send me the latest version?”</p></li>
+<li><p>“Where is the latest version?”</p></li>
+<li><p>“Which version are you using?”</p></li>
+<li><p>“Which version have the authors used in the paper I am trying to reproduce?”</p></li>
+<li><p>“Found a bug! Since when was it there?”</p></li>
+<li><p>“I am sure it used to work. When did it change?”</p></li>
+<li><p>“My laptop is gone. Is my thesis now gone?”</p></li>
+</ul>
+</section>
+<section id="features-roll-back-branching-merging-collaboration">
+<h2>Features: roll-back, branching, merging, collaboration<a class="headerlink" href="#features-roll-back-branching-merging-collaboration" title="Link to this heading"></a></h2>
+<p><strong>Problem: Your code worked two days ago, but is giving an error now.
+You don’t know what you changed.</strong></p>
+<p><strong>Problem: You and your colleague want to work on the same code at the
+same time.</strong></p>
+<ul class="simple">
+<li><p><strong>Roll-back</strong>: you can always go back to a previous version and compare</p></li>
+<li><p><strong>Branching and merging</strong>:</p>
+<ul>
+<li><p>Work on different ideas at the same time</p></li>
+<li><p>Different people can work on the same code/project without interfering</p></li>
+<li><p>You can experiment with an idea and discard it if it turns out to be a bad idea</p></li>
+</ul>
+</li>
+</ul>
+<figure class="align-default" id="id1">
+<a class="reference internal image-reference" href="../_images/gophers.png"><img alt="Branching explained with a gopher" src="../_images/gophers.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Image created using <a class="reference external" href="https://gopherize.me/">https://gopherize.me/</a>
+(<a class="reference external" href="https://twitter.com/jay_gee/status/703360688618536960">inspiration</a>).</span><a class="headerlink" href="#id1" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p><strong>Collaboration</strong>: review, compare, share, discuss</p></li>
+<li><p><a class="reference external" href="https://github.com/coderefinery/git-intro/network">Example network graph</a></p></li>
+<li><p>With version control we can <strong>annotate</strong> code
+(<a class="reference external" href="https://github.com/networkx/networkx/blame/main/networkx/algorithms/boundary.py">browse this example online</a>):</p></li>
+</ul>
+<figure class="align-default" id="id2">
+<a class="with-border reference internal image-reference" href="../_images/git-annotate.png"><img alt="Example of a git-annotated code with code and history side-by-side" class="with-border" src="../_images/git-annotate.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Example of a git-annotated code with code and history side-by-side.</span><a class="headerlink" href="#id2" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>Talking about code, showing someone your code</p>
+<ul>
+<li><p>“Clone the code, go to the file ‘src/util.rs’, and search for ‘time_iso8601’”.
+Oh! But make sure you use the version from August 2023.”</p></li>
+<li><p>Or I can send you a <a class="reference external" href="https://github.com/NordicHPC/sonar/blob/75daafc86582feb06299d6a47c82112f39888152/src/util.rs#L40-L44">permalink</a>:</p></li>
+</ul>
+</li>
+</ul>
+<figure class="align-default" id="id3">
+<a class="with-border reference internal image-reference" href="../_images/code-portion.png"><img alt="Screen-shot of a code portion" class="with-border" src="../_images/code-portion.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Permalink that points to a code portion.</span><a class="headerlink" href="#id3" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<section id="terminology-git-repositories-a-place-to-store">
+<h3>Terminology: Git repositories - a place to store<a class="headerlink" href="#terminology-git-repositories-a-place-to-store" title="Link to this heading"></a></h3>
+<p>“A repository is the most basic element of GitHub. It’s a place where you can <strong>store your code</strong>, your files, and each file’s <strong>revision history</strong>. Repositories can be <strong>owned by persons or organisations</strong>, have <strong>multiple collaborators</strong> and can be either <strong>public or private</strong>”</p>
+<ul class="simple">
+<li><p>Adapted from <a class="reference external" href="https://docs.github.com/en/repositories/creating-and-managing-repositories/about-repositories">GitHub documentation</a></p></li>
+</ul>
+<p>“Locally, a git repository is the <code class="docutils literal notranslate"><span class="pre">.git</span></code> folder inside a project. This repository <strong>tracks all changes made to files</strong> in your project, building a history over time. Meaning, if you delete the <code class="docutils literal notranslate"><span class="pre">.git</span></code> local folder, then you delete your local project’s history.”</p>
+<ul class="simple">
+<li><p>Adapted from GitKraken(https://www.gitkraken.com/learn/git/tutorials/what-is-a-git-repository)</p></li>
+</ul>
+</section>
+</section>
+<section id="demo-exploring-a-repository-online">
+<h2>Demo - exploring a repository online<a class="headerlink" href="#demo-exploring-a-repository-online" title="Link to this heading"></a></h2>
+<div class="admonition-exercise exercise important admonition" id="exercise-0">
+<p class="admonition-title">Exercise</p>
+<p>Let’s browse the <a class="reference external" href="https://github.com/numpy/numpy">numpy repository on GitHub</a>.</p>
+<p>Numpy is a popular Python package used in almost all research code. It has a large community of contributors.</p>
+<ol class="arabic simple">
+<li><p>Check out the main page: Source code, README, LICENSE</p></li>
+<li><p>Check who contributed</p></li>
+<li><p>Explore differeent branches</p></li>
+<li><p>Take a look at the history</p></li>
+<li><p>See the different commit messages</p></li>
+<li><p>Note that you can clone the repository</p></li>
+</ol>
+<p>Consider:</p>
+<ul class="simple">
+<li><p>What signals project maturity?</p></li>
+<li><p>Where would you look for licensing or contribution rules?</p></li>
+<li><p>How easy would this be to cite or reuse?</p></li>
+</ul>
+</div>
+</section>
+<section id="terminology-commit">
+<h2>Terminology: Commit<a class="headerlink" href="#terminology-commit" title="Link to this heading"></a></h2>
+<p>“A commit is a snapshot of current state of your repository
+… like taking a picture with metadata”</p>
+<p>Commits include information, such as</p>
+<ul class="simple">
+<li><p>Who changed/created something?</p></li>
+<li><p>What was changed/created?</p></li>
+<li><p>When was it changed/created?</p></li>
+</ul>
+<p>In addition we can (should!) provide information on:</p>
+<ul class="simple">
+<li><p>Why was it changed/created? -&gt; This information we have to provide in the commit message!</p></li>
+</ul>
+<p>-&gt; Commit messages make the history that we can browse.</p>
+</section>
+<section id="terminology-clone-download">
+<h2>Terminology: Clone - download<a class="headerlink" href="#terminology-clone-download" title="Link to this heading"></a></h2>
+<p>Cloning is a way to get the latest version of a repository to your computer.</p>
+<p>Cloning also includes the history and is therefore preferred over “pure” download or copy/paste of content.</p>
+</section>
+<section id="terminology-git-vs-github">
+<h2>Terminology: Git vs GitHub<a class="headerlink" href="#terminology-git-vs-github" title="Link to this heading"></a></h2>
+<p>Git is a tool/format for version control. It can be used via the terminal or be inbuilt to integrated development environments (IDE) like VSCode, RStudio, Jupyter. Alternative tools are for example <a class="reference external" href="https://subversion.apache.org">Subversion</a>,<a class="reference external" href="https://www.mercurial-scm.org">Mercurial</a>, or <a class="reference external" href="https://pijul.org/">Pijul</a>.</p>
+<p>GitHub is a hosting service for Git repositories with web interface. It is one place to <strong>find the source</strong> of software, webpages, presentations, books, games, and a <strong>place to collaborate</strong> and share.  Alternative services for example <a class="reference external" href="https://about.gitlab.com/">GitLab</a> and <a class="reference external" href="https://codeberg.org/">Codeberg</a>.</p>
+</section>
+<section id="what-we-typically-like-to-version-control">
+<h2>What we typically like to version control<a class="headerlink" href="#what-we-typically-like-to-version-control" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p>Software (this is how it started, but Git/GitHub can track a lot more)</p></li>
+<li><p>Scripts</p></li>
+<li><p>Documents (plain text files are much better suitable than Word documents)</p></li>
+<li><p>Manuscripts (Git is great for collaborating/sharing LaTeX or <a class="reference external" href="https://quarto.org/">Quarto</a> manuscripts)</p></li>
+<li><p>Configuration files</p></li>
+<li><p>Website sources</p></li>
+<li><p>Data (though there are better options available!)</p></li>
+</ul>
+<p>Do not use git for:</p>
+<ul class="simple">
+<li><p>Secrets</p></li>
+<li><p>Passwords</p></li>
+<li><p>Binaries (e.g. <code class="docutils literal notranslate"><span class="pre">.exe</span></code> files)</p></li>
+<li><p>Files generated from builds that can be regenerated from source</p></li>
+</ul>
+</section>
+<section id="difficulties-of-version-control">
+<h2>Difficulties of version control<a class="headerlink" href="#difficulties-of-version-control" title="Link to this heading"></a></h2>
+<p>Despite the benefits, let’s be honest, there are some difficulties:</p>
+<ul class="simple">
+<li><p>One more thing to learn (it’s probably worth it and as a researcher, it will save more time in the long run; basic career skill).</p></li>
+<li><p>Difficult if your collaborators don’t want to use it (in the worst case, one
+can still use version control <strong>on ones own side</strong> and email versions to collaborators).</p></li>
+<li><p>Advanced things can be difficult, but basics are often enough; and most questions and solutions are being discussed online.</p></li>
+</ul>
+</section>
+<section id="why-git-and-not-any-of-the-other-tools">
+<h2>Why git and not any of the other tools?<a class="headerlink" href="#why-git-and-not-any-of-the-other-tools" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><strong>Easy to set up</strong>: no server needed.</p></li>
+<li><p><strong>Very popular</strong>: chances are high that if you want to contribute to somebody else’s code, it is tracked with Git.</p></li>
+<li><p><strong>Distributed</strong>: good backup, no single point of failure, you can track and
+clean-up changes offline, simplifies collaboration model for open-source
+projects.</p></li>
+<li><p>Important <strong>platforms</strong> such as <a class="reference external" href="https://github.com">GitHub</a>, <a class="reference external" href="https://gitlab.com">GitLab</a>, and <a class="reference external" href="https://bitbucket.org">Bitbucket</a>
+build on top of Git.</p></li>
+</ul>
+<p>Note that many organisations have their own <strong>In-house GitLab</strong>: This lets you host your own repositories safely within the walls of your organisation.</p>
+<p>For collaboration in the Nordics we have the <a class="reference external" href="https://coderefinery.org/repository/">Nordic GitLab hosted by DeIC</a>, hosted on servers in Denmark.</p>
+</section>
+<section id="exercise-our-first-repository">
+<h2>Exercise: Our first repository<a class="headerlink" href="#exercise-our-first-repository" title="Link to this heading"></a></h2>
+<div class="admonition-exercise exercise important admonition" id="exercise-1">
+<p class="admonition-title">Exercise</p>
+<p>Let’s create our first online repository! We pretend to be a researcher writing some code on their own computer who now wants to collaborate with others and use GitHub for it. This is a beginner scenario, avoiding separate tools and use of command line.</p>
+<ol class="arabic simple">
+<li><p>Create a plain text file on your computer, using a text editor of your choice.</p></li>
+<li><p>Fill it with some (random) text.</p></li>
+<li><p>Save the file (somewhere) on your computer, call it <code class="docutils literal notranslate"><span class="pre">random.txt</span></code>.</p></li>
+<li><p>Now we open <a class="reference external" href="https://github.com">github.com</a> and log in.</p></li>
+<li><p>To deposit our text file, we first need to <strong>create a repository</strong>.</p></li>
+</ol>
+<p>5.1 Click the plus button top right of the GitHub page &gt; New repository.</p>
+<figure class="align-default" id="id4">
+<a class="with-border reference internal image-reference" href="../_images/github-create-repo.png"><img alt="Screen-shot of the create repository interface on GitHub, described below" class="with-border" src="../_images/github-create-repo.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">The “create repository” interface on GitHub.</span><a class="headerlink" href="#id4" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<p>5.2 In the form:</p>
+<ul class="simple">
+<li><p>Set your own username as the owner</p></li>
+<li><p>Choose a repository name, needs to be unique for your namespace</p></li>
+<li><p>Add a short description of what this repository is for</p></li>
+<li><p>Choose if you would like the repository to be public or private. If you can, always choose public, though you can also change that later.</p></li>
+<li><p>We will not be using any template, though they can be super useful for similar projects</p></li>
+<li><p>We want to add a README, so let’s turn that switch to <strong>on</strong>.</p></li>
+<li><p>We do not need a .gitignore at this point. This is important when you work locally and want to exclude some of your local files from being tracked</p></li>
+<li><p>And it is good practice to right away add a license, e.g. CC0, Creative Commons Zero.</p></li>
+<li><p>Then click <strong>create repository</strong>.</p></li>
+</ul>
+<p>We have now created an empty repository!</p>
+<figure class="align-default" id="id5">
+<a class="with-border reference internal image-reference" href="../_images/github-empty-repo.png"><img alt="Screen-shot of the an empty repository on GitHub, described below" class="with-border" src="../_images/github-empty-repo.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">An empty repository after creation.</span><a class="headerlink" href="#id5" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<ol class="arabic simple" start="6">
+<li><p>Now upload the text file, that we created earlier</p></li>
+</ol>
+<ul class="simple">
+<li><p>Find the plus (“add file”) button next to the bigger green “code” button in your repository</p></li>
+<li><p>Click “upload files”</p></li>
+</ul>
+<figure class="align-default" id="id6">
+<a class="with-border reference internal image-reference" href="../_images/github-upload-file.png"><img alt="Screen-shot of the add file button" class="with-border" src="../_images/github-upload-file.png" style="width: 100%;" />
+</a>
+<figcaption>
+<p><span class="caption-text">Adding a file to the repository on GitHub.</span><a class="headerlink" href="#id6" title="Link to this image"></a></p>
+</figcaption>
+</figure>
+<ul class="simple">
+<li><p>After drag and dropping or finding your file from your computer, we need to <code class="docutils literal notranslate"><span class="pre">commit</span></code> it to the repository</p></li>
+<li><p>For that write a short commit message that tells why you added the file. You can, but don’t have to, add an extended description</p></li>
+<li><p>We choose “commit directly to the main branch”</p></li>
+<li><p>And “commit changes”.</p></li>
+</ul>
+<p>You now have created your own repository and added a file! You can explore the history to observe your progress.</p>
+<p>The link to your own public (!) repository is your post-day 4 assignment which needs to be submitted via moodle.</p>
+</div>
+</section>
+<section id="exercise-editing-files-online">
+<h2>Exercise: Editing files online<a class="headerlink" href="#exercise-editing-files-online" title="Link to this heading"></a></h2>
+<div class="admonition-exercise exercise important admonition" id="exercise-2">
+<p class="admonition-title">Exercise</p>
+<p>Let’s now use the GitHub web interface to edit a file that is already there. This can be very handy when you just want to edit something small in one file. For larger edits, you may want to move away from the GitHub webinterface. Though, GitHub these days also provides online editors (<code class="docutils literal notranslate"><span class="pre">github.dev</span></code>). We will only look at editing single files in this course.</p>
+<ol class="arabic simple">
+<li><p>In your repositories main page <code class="docutils literal notranslate"><span class="pre">github.com</span></code>, find the <code class="docutils literal notranslate"><span class="pre">README.md</span></code> file and click it.</p></li>
+<li><p>Now find the edit button, the pen symbol on top right of the README.md page.</p></li>
+<li><p>Edit the text in your README.md; you can for example write that this repository is part of an exercise in the Data Steward training.</p></li>
+<li><p>Safe your edits. Observe how it is the same procedure as when uploading a new file asking about branch and for a commit message.</p></li>
+</ol>
+<p>We are now able to edit files online in a repository that belongs to us!</p>
+</div>
+<section id="working-with-my-own-github-repository">
+<h3>Working with my own GitHub repository<a class="headerlink" href="#working-with-my-own-github-repository" title="Link to this heading"></a></h3>
+<section id="on-github-see-also-exercise-above">
+<h4>… on GitHub (see also exercise above!)<a class="headerlink" href="#on-github-see-also-exercise-above" title="Link to this heading"></a></h4>
+<ol class="arabic simple">
+<li><p>Work on single files, and one at a time …</p></li>
+<li><p>Commit when done: take snapshots of units of work (one file at a time)</p></li>
+</ol>
+<p>Working on GitHub can be useful for small edits, like fixing a typo or changes that relate to a single file.</p>
+</section>
+<section id="locally">
+<h4>… locally<a class="headerlink" href="#locally" title="Link to this heading"></a></h4>
+<p>When you want to edit multiple files and work on your own computer with an editor of youre choice:</p>
+<ol class="arabic simple">
+<li><p>Clone: get a copy of the content (with metadata and history) to my computer</p></li>
+<li><p>Work on it using any editor, make updates, add files, remove files,  …</p></li>
+<li><p>git add and git commit: take snapshots of units of work (can be changes in one or many files)</p></li>
+<li><p>Push: submit snapshots to GitHub, so that others can see</p></li>
+</ol>
+<p>When you get back to it later: Instead of clone, you git pull: Get latest version from GitHub</p>
+<p>See also next lesson.</p>
+<div class="admonition-keypoints keypoints admonition" id="keypoints-0">
+<p class="admonition-title">Keypoints</p>
+<ul class="simple">
+<li><p>Version control supports data provenance by recording who changed what, when, and why.</p></li>
+<li><p>Commits act as documentation by capturing meaningful, traceable changes to data, code, or metadata.</p></li>
+<li><p>Git history enables accountability and recovery by allowing comparison, auditing, and safe rollback of changes.</p></li>
+<li><p>Various usage scenarios exist.</p></li>
+</ul>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../getting-ready/" class="btn btn-neutral float-left" title="Getting ready for this course" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../git-collaborative/" class="btn btn-neutral float-right" title="Using git to collaborate" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2025, CodeRefinery contributors.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
