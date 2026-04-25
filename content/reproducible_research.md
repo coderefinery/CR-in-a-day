@@ -405,6 +405,20 @@ Containers solve many problems, but they also raise questions about long-term ma
 - [Zenodo](https://zenodo.org/)
 
 
+
+```{admonition} Software Management Plan (SMP)
+A **Software Management Plan** documents how research software will be developed, maintained, and sustained throughout its life cycle — analogous to a Data Management Plan for research data. Key elements include:
+
+- **Scope and purpose**: what the software does, who it is for, and what problem it solves.
+- **Roles and responsibilities**: who develops, maintains, and provides support.
+- **Versioning and release strategy**: how versions are tracked, released, and archived.
+- **Dependency and license management**: what third-party components are used and under what licenses.
+- **Life-cycle planning**: maintenance timeline, long-term archiving, and end-of-life or deprecation plans.
+
+For further reading, see [Anderson et al. (2007), *COTS and Reusable Software Management Planning: A Template for Life-Cycle Management*, CMU/SEI-2007-TR-011](https://www.sei.cmu.edu/library/cots-and-reusable-software-management-planning-a-template-for-life-cycle-management/).
+```
+
+
 ---
 
 ```{keypoints}
