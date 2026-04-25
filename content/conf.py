@@ -50,6 +50,9 @@ myst_enable_extensions = [
     "colon_fence",
 ]
 
+# Auto-generate anchors for headings up to depth 3 (h1, h2, h3)
+myst_heading_anchors = 3
+
 # Settings for sphinx-copybutton
 copybutton_exclude = ".linenos, .gp"
 
